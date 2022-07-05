@@ -27,7 +27,7 @@ function App() {
       
 
       
-        <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
           <SimpelHeader />
         <main className="container mt-5">
         <Routes>
