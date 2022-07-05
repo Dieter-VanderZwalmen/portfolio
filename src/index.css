@@ -1,13 +1,298 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary: #FFCE00;
+  --secondary: #FE4880;
+  --dark: #212121;
+  --light: #F3F3F3;
+  --purple: #9C27B0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: montserrat, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+header , footer{
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+}
+
+
+.info {
+ 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.info img {
+ 
+  border-radius: 50%;
+  
+  /* make the image a bit smaller */
+  width: 400px;
+}
+/*  give hr a blue color and make it a bit thicker and fade at the end*/
+.info hr {
+  border: 1px solid rgb(0, 38, 255);
+  width: 95%;
+  
+ 
+}
+
+.cards {
+
+
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.card {
+  margin: 10px;
+  width: 31%;
+  height: 450px;
+  perspective: 1000px;
+  border: none !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  
+}
+.contactCard {
+      background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+      
+}
+.contactCard {
+  /*text white */
+  color: white !important;
+}
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.card__face--front h2 {
+
+  color: #FFF;
+  font-size: 32px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card__face--back {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+}
+
+.card__header {
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card__header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+.pp {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 10px auto 30px;
+  border-radius: 50%;
+  background-color: #FFF;
+  border: 5px solid #FFF;
+  object-fit: cover;
+}
+.button{
+    color: #FFF;
+    /* set at the bottom of the container */
+    position: absolute;
+    bottom: 0;
+    /* set the width of the button */
+    width: 90%;
+    /* center the button */
+    left: 50%;
+    transform: translateX(-50%);
+    /* center the text in the button */
+    text-align: center;
+
+    border-radius: 16px;
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));    
+}
+.button:hover{
+  color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn.btn-primary {
+  /* position: fixed;
+      bottom: 10px;
+      margin-left: 10%;
+      margin-right: auto;
+      border-radius: 50px; */
+  display: flex;
+  justify-content: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  position: absolute;
+  top: 90%;
+  width: 100%;
+
+  border-radius: 16px;
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  overflow: hidden;
+  object-fit: contain;
+}
+
+
+
+
+.card__header h2 {
+
+  color: #FFF;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: calc(var(--font-size) * 3.5);
+
+
+}
+
+.card__body {
+  padding: 30px;
+}
+
+.card__body h3 {
+  color: var(--dark);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card__body p {
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+
+
+
+
+/* remove the styling of links*/
+
+
+
+
+a.nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: rgb(35, 156, 255);
+  text-decoration-thickness: 3px;
+
+
+}
+
+a.nav-link {
+  color: rgb(0, 38, 255) !important;
+}
+
+.card center img {
+  height: 100px;
+  width: 100px;
+  border-radius: 35px;
+  margin-top: 2%;
+}
+.card__body a{
+  display: flex;
+  align-self: center;
+}
+footer ul li,
+.nav ul li {
+  list-style-type: none;
+  float: right;
+  margin: 5px 5px 5px 5px;
+}
+
+h1 {
+  /* put the h1 on the left side of the container */
+
+  font-size: 5em;
+
+}
+
+footer {
+  top: 95%;
+  margin-top: 3%;
+}
+
+
+
+
+
+body {
+  background-image: url("/src/assets/blob-scene-haikei.svg");
+  /* make the background fill the whole page*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+/* rotate the background of the body by 30 degrees on x axis */
