@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {  Link } from 'react-router-dom';
-import { useFlip, FlipProvider } from "react-easy-flip";
+import { useFlip } from "react-easy-flip";
 
 
 const tabs = [
@@ -11,13 +11,13 @@ const tabs = [
 ];
 
 const SimpelHeader = () => {
-  const [selectedTab, setSelectedTab] = React.useState("home");
+  const [selectedTab, setSelectedTab] = React.useState("");
 
   const flipRootId = "flipRoot";
 
   useFlip(flipRootId);
 
-
+  
   return (
     <header>
       

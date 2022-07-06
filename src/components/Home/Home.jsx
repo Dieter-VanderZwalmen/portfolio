@@ -9,8 +9,8 @@ const Contact = () => {
     return (
 
         <>
-
-            <div className="info">
+            <h4> Deze site is nog niet af! </h4>
+            <div className="info info_left">
                 <div className="left">
                     <h3> About Me</h3>
                     <hr></hr>
@@ -25,7 +25,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="info">
+            <div className="info info_right">
                 <div className="left">
                     <img src={goals} alt="Bucket list" style={{ width: '350px' }} />
                 </div>
@@ -37,7 +37,7 @@ const Contact = () => {
 
             </div>
 
-            <div className="info">
+            <div className="info info_left">
                 <div className="right">
                     <h3> Talents</h3>
                     <hr></hr>
@@ -49,9 +49,9 @@ const Contact = () => {
 
 
             </div>
-            <div className="info">
+            <div className="info info_right">
                 <div className="left">
-                    <img src={bucketlistGif} alt="Bucket list"  />
+                    <img src={bucketlistGif} alt="Bucket list" />
                 </div>
                 <div className="right">
                     <h3> Interests</h3>

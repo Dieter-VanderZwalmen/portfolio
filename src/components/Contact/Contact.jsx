@@ -11,11 +11,11 @@ const Contact = () => {
 
 
 
-
+            <h2> Contact me</h2>
             <div className='cards' >
-                <CardComponent title="Mail" text="link naar mail dieter.vdz@gmail.com" src={mail} trigger="morph" link="https://github.com/Dieter-VanderZwalmen/Minesweeper" />
-                <CardComponent title="Linkedin" text="in c#" src={linkedin} trigger="morph" link="https://github.com/Dieter-VanderZwalmen/Minesweeper" />
-                <CardComponent title="Github" text="al mijn repos zijn hier te vinden" src={github} trigger="morph" link="https://github.com/Dieter-VanderZwalmen/Huffman" />
+                <CardComponent title="Mail" text="link naar mail dieter.vdz@gmail.com" src={mail} trigger="morph" link="mailto:dieter.vdz@gmail.com" />
+                <CardComponent title="Linkedin" text="in c#" src={linkedin} trigger="morph" link="https://www.linkedin.com/in/dieter-vdz/" />
+                <CardComponent title="Github" text="al mijn repos zijn hier te vinden" src={github} trigger="morph" link="https://github.com/Dieter-VanderZwalmen" />
                 
 
 

@@ -11,9 +11,11 @@ const CardComponent = (props) => {
   return (
     <>
 
-      <Card className="contactCard">
+      <Card className="card">
+        <div className="card__inner">
+          <div class="card__face card__face--front">
         <center>
-          <img src={props.src} />
+          <img src={props.src} class="pp" />
         </center>
         <Card.Body >
           <h2>{props.title}</h2>
@@ -21,13 +23,12 @@ const CardComponent = (props) => {
           
 
           {/* if props.githublink is not empty render following statement */}
-          {props.link !== undefined ? <a href={props.link} target="_blank" class="button">Go to {props.title}</a> : ""}
+          {props.link !== undefined ? <a href={props.link} target="_blank" class="btn btn-primary">Go to {props.title}</a> : ""}
 
         </Card.Body>
 
-
-
-
+          </div>
+        </div>
       </Card>
 
     </>

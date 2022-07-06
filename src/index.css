@@ -1,3 +1,53 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpAndFadeIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.info_left {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.info_right {
+  animation: slideInFromRight 1s ease-in-out;
+}
+
 :root {
   --primary: #FFCE00;
   --secondary: #FE4880;
@@ -19,7 +69,14 @@ body {
   min-height: 100vh;
 }
 
-header , footer{
+
+
+
+
+header,
+footer {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -31,24 +88,26 @@ header div {
 
 
 .info {
- 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .info img {
- 
+
   border-radius: 50%;
-  
+
   /* make the image a bit smaller */
   width: 400px;
 }
+
 /*  give hr a blue color and make it a bit thicker and fade at the end*/
 .info hr {
   border: 1px solid rgb(0, 38, 255);
   width: 95%;
-  
- 
+
+
 }
 
 .cards {
@@ -67,16 +126,30 @@ header div {
   perspective: 1000px;
   border: none !important;
   background-color: rgba(255, 255, 255, 0) !important;
-  
+
+
+  opacity: 0;
+  /* make things invisible upon start */
+  animation: slideUpAndFadeIn ease-out 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+  animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+  animation-duration: 1.5s;
+  animation-delay: 0.5s
 }
+
 .contactCard {
-      background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
-      
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+
 }
+
 .contactCard {
   /*text white */
   color: white !important;
 }
+
 .card__inner {
   width: 100%;
   height: 100%;
@@ -157,26 +230,28 @@ h2 {
   border: 5px solid #FFF;
   object-fit: cover;
 }
-.button{
-    color: #FFF;
-    /* set at the bottom of the container */
-    position: absolute;
-    bottom: 0;
-    /* set the width of the button */
-    width: 90%;
-    /* center the button */
-    left: 50%;
-    transform: translateX(-50%);
-    /* center the text in the button */
-    text-align: center;
 
-    border-radius: 16px;
-    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));    
+.button {
+  color: #FFF;
+  /* set at the bottom of the container */
+  position: absolute;
+  bottom: 0;
+  /* set the width of the button */
+  width: 90%;
+  /* center the button */
+  left: 50%;
+  transform: translateX(-50%);
+  /* center the text in the button */
+  text-align: center;
+
+  border-radius: 16px;
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
 }
-.button:hover{
+
+.button:hover {
   color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+  background-color: #0069d9;
+  border-color: #0062cc;
 }
 
 .btn.btn-primary {
@@ -244,12 +319,10 @@ a.nav-link.active {
   text-decoration: underline;
   text-decoration-color: rgb(35, 156, 255);
   text-decoration-thickness: 3px;
-
-
 }
 
 a.nav-link {
-  color: rgb(0, 38, 255) !important;
+  color: rgb(14, 38, 250) !important;
 }
 
 .card center img {
@@ -258,10 +331,12 @@ a.nav-link {
   border-radius: 35px;
   margin-top: 2%;
 }
-.card__body a{
+
+.card__body a {
   display: flex;
   align-self: center;
 }
+
 footer ul li,
 .nav ul li {
   list-style-type: none;
