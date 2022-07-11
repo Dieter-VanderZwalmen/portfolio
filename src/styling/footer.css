@@ -1,0 +1,55 @@
+footer {
+    background-color: var(--grijs);
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+
+}
+
+.voeter {
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+}
+
+footer ul {
+    display: flex;
+    padding-left: 0 !important;
+}
+
+footer h4 {
+    color: white;
+}
+
+
+p {
+    color: var(--grijs);
+
+}
+
+div.skills a {
+    margin: 1rem;
+}
+
+footer ul li a svg {
+    height: 75px;
+    width: 75px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    footer h4 {
+        margin: 0 !important;
+    }
+}

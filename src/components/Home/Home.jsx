@@ -3,14 +3,25 @@ import bucketlistGif from '../../assets/bucketlistGif.gif';
 import profielfoto from '../../assets/profielfoto.jfif';
 import goals from '../../assets/goals.jpg';
 import thinkinghead from '../../assets/thinkinghead.webp';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact = () => {
     //state for info with default value = "default"
 
     return (
 
         <>
+            <div class="text-center my-5" data-aos="fade-up">
+                <img class="img-fluid rounded-circle mb-4" src={profielfoto} style={{ height: "150px", width: "150px" }} alt="..." />
+                <h1 class="text-black fs-3 fw-bolder textShadow">Dieter Van der Zwalmen</h1>
+                <p class="text-black-50 mb-0  ">Petit slogan ofzo</p>
+            </div>
             <h4> Deze site is nog niet af! </h4>
-            <div className="info info_left">
+            <p> de kleuren, text, fotos en de knoppen in de contacteer me pagina moeten aangepast worden </p>
+                <p>misschien ga ik de projects pagina nog opsplitsen ook is de site nog niet responsive</p>
+
+            <div className="info" data-aos="fade-up">
                 <div className="left">
                     <h3> About Me</h3>
                     <hr></hr>
@@ -20,46 +31,14 @@ const Contact = () => {
                         I combine this with all my hobbies to experience each day to its fullest.</p>
                 </div>
                 <div className="right">
-                    <img src={profielfoto} alt=" guy programming gif" style={{ width: '300px' }} />
 
                 </div>
             </div>
 
-            <div className="info info_right">
-                <div className="left">
-                    <img src={goals} alt="Bucket list" style={{ width: '350px' }} />
-                </div>
-                <div className="right">
-                    <h3> My Goal</h3>
-                    <hr></hr>
-                    <p>beter worden. Veel bijleren. gezond werk-leven balans. relaties opbouwen en int algemeen groeien als persoon</p>
-                </div>
-
-            </div>
-
-            <div className="info info_left">
-                <div className="right">
-                    <h3> Talents</h3>
-                    <hr></hr>
-                    <p>beter worden. Veel bijleren. gezond werk-leven balans. relaties opbouwen</p>
-                </div>
-                <div className="left">
-                    <img src={thinkinghead} alt="Bucket list" style={{ width: '350px' }} />
-                </div>
 
 
-            </div>
-            <div className="info info_right">
-                <div className="left">
-                    <img src={bucketlistGif} alt="Bucket list" />
-                </div>
-                <div className="right">
-                    <h3> Interests</h3>
-                    <hr></hr>
-                    <p>beter worden. Veel bijleren. gezond werk-leven balans. relaties opbouwen</p>
-                </div>
 
-            </div>
+            
 
 
         </>

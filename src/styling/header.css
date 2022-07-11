@@ -1,0 +1,145 @@
+/*header */
+
+/* particles een hoogte geven */
+
+h1 {
+    /* make the text size bigger */
+    font-size: 5.5rem;
+}
+
+.denav {
+    display: flex;
+    justify-content: space-around;
+    height: 5vh;
+    padding-top: 3%;
+
+}
+
+
+
+
+
+
+
+
+ul.nav-links {
+
+    display: flex;
+    justify-content: flex-end;
+
+    margin-right: 10px;
+
+}
+
+
+
+
+ul.nav-links li {
+    margin-left: 5px;
+    margin-right: 10px;
+
+
+}
+
+ul.nav-links li svg {
+    width: 20px;
+
+
+}
+
+ul.nav-links li a {
+    margin-left: 5px;
+    margin-right: 10px;
+
+}
+
+/* particles in de achtergrond zetten */
+.particles {
+    position: relative;
+    z-index: -5;
+}
+
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* fa icoontjes wit maken */
+.fa-cog {
+    color: rgb(255, 255, 255);
+}
+
+
+header h1,
+header h4 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.naam {
+    margin-top: 13vh;
+    margin-bottom: 22vh;
+}
+
+/* nav link on hover underline animation */
+
+a.link:hover {
+    color: wheat;
+}
+
+a.link {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ca2800;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a.link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media screen and (max-width: 600px) {
+    ul.nav-links {
+        padding-left: 0 !important;
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .denav {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    h4 {
+        margin-left: 2% !important;
+        margin-right: auto;
+
+    }
+}

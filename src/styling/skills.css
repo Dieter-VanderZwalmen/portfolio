@@ -1,0 +1,51 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+
+.skills {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    list-style-type: none;
+
+}
+
+ul.skills li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+ul.skills svg{
+    margin-bottom: 15%;
+}
+svg{
+    height: 90px;
+    width: 90px;
+    transition: all .2s ease-in-out;
+}
+
+
+ul svg:hover{
+transform: scale(1.1);
+}
+.rotate:hover {
+    animation: rotation 5s infinite linear;
+    transform: scale(1.1);
+}
+

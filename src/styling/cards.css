@@ -1,0 +1,264 @@
+/* animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpAndFadeIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.info_left {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.info_right {
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+.projects {
+    background-color: var(--wit);
+    padding-bottom: 3%;
+    padding-top: 8%;
+}
+
+.cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    margin: 15px;
+    width: 20%;
+    height: 350px;
+    perspective: 1000px;
+    border: none !important;
+    background-color: rgba(255, 255, 255, 0) !important; /* verwijder kader rond card */
+
+
+    opacity: 0;
+    /* make things invisible upon start */
+    animation: slideUpAndFadeIn ease-out 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration: 1.5s;
+    animation-delay: 0.5s
+}
+@media screen and (max-width: 900px) {
+
+    .card{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .card {
+        width: 80%;
+    }
+}
+
+.card__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+
+}
+.card__inner:hover {
+transform: rotateY(15deg) scale(1.05);
+
+}
+
+.card__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 10px 3px var(--shadow);
+}
+
+.card__face--front {
+    background-image: linear-gradient(to bottom right, var(--primaryGradient), var(--secondaryGradient)) !important;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.card__face--front h2 {
+
+    color: #FFF;
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.card__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card__header {
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, var(--primaryGradient), var(--secondaryGradient));
+    z-index: -1;
+    border-radius: 0px 0px 50% 0px;
+
+}
+
+
+/* kader rond image
+ .pp {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 10px auto 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid #FFF;
+    object-fit: cover;
+} */
+
+/* niet meer in gebruik
+.button {
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    border-radius: 16px;
+    background-image: linear-gradient(to bottom right, rgb(61, 7, 7),
+            white);
+} */
+
+
+
+.btn.btn-primary {
+
+    display: flex;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    right: auto;
+    width: 90%;
+    color: #030303 !important;
+    border-radius: 16px;
+    /* background-image: linear-gradient(to bottom right, rgb(255, 81, 0),
+        white); */
+    background-color: var(--wit);
+    overflow: hidden;
+    object-fit: contain;
+    border-color: var(--accent) !important;
+
+
+    transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-primary:hover {
+    transform: scale(1.1);
+    background-color: white !important;
+
+}
+
+
+
+
+.card__header h2 {
+
+    color: #FFF;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(var(--font-size) * 3.5);
+
+
+}
+
+.card__body {
+    padding: 30px;
+}
+
+.card__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}

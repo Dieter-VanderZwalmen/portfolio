@@ -1,0 +1,90 @@
+/* root (de kleurtjes)*/
+@import url(root.css);
+
+/* header */
+@import url(header.css);
+/* body */
+@import url(body.css);
+
+/* skills */
+@import url(skills.css);
+
+/* cards*/
+@import url(cards.css);
+
+/*footer */
+@import url(footer.css);
+
+/* divider*/
+@import url(divider.css);
+
+
+
+
+/* global */
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 70%;
+
+}
+
+
+.white {
+    /* Set the hr color */
+    color: rgb(255, 255, 255);
+    /* old IE */
+    background-color: rgb(255, 255, 255);
+    /* Modern Browsers */
+}
+
+.black {
+    /* Set the hr color */
+    color: var(--grijs);
+    /* old IE */
+    background-color: var(--grijs);
+    /* Modern Browsers */
+
+}
+
+
+strong {
+    color: var(--accent);
+}
+
+
+
+.blackbackground {
+    background-color: var(--grijs);
+
+}
+
+.white-text,
+.white-text li p {
+    color: white;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    h4 {
+        margin-left: 3rem;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    h4 {
+        margin-left: 3rem;
+        margin-right: auto;
+        text-align: center;
+    }
+}
