@@ -1,20 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cb7d10f1.css",
-    "main.js": "/portfolio/static/js/main.d154cb93.js",
+    "main.css": "/portfolio/static/css/main.c380bb43.css",
+    "main.js": "/portfolio/static/js/main.3fbcfa66.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/programmingGif.gif": "/portfolio/static/media/programmingGif.05f035b3a27b38553a6a.gif",
     "static/media/profielfoto.jfif": "/portfolio/static/media/profielfoto.da56c2185ac8f9b7956c.jfif",
-    "static/media/devops-logo.png": "/portfolio/static/media/devops-logo.7ca2c15d75b88c68020e.png",
-    "static/media/tutoring-logo.png": "/portfolio/static/media/tutoring-logo.2d31fd3dce4cf57f6da2.png",
     "static/media/bucketlistGif.gif": "/portfolio/static/media/bucketlistGif.acbe793f74e864e31bd3.gif",
-    "static/media/postgres-logo.png": "/portfolio/static/media/postgres-logo.ca08c7623b70f444f06d.png",
-    "static/media/react-logo.png": "/portfolio/static/media/react-logo.5e88d7b09d60acd62679.png",
-    "static/media/python-logo.jpg": "/portfolio/static/media/python-logo.b64833c2b667dcba3f32.jpg",
     "static/media/thinkinghead.webp": "/portfolio/static/media/thinkinghead.76b9d6007c4f270b7c31.webp",
-    "static/media/spring-boot-logo.png": "/portfolio/static/media/spring-boot-logo.df25efeb9e2273d98840.png",
-    "static/media/csharp-logo.png": "/portfolio/static/media/csharp-logo.7f58ab59750a276a404e.png",
-    "static/media/network-logo.jpg": "/portfolio/static/media/network-logo.f2f3129d5d432a116389.jpg",
     "static/media/logo.png": "/portfolio/static/media/logo.564c900d5537757f9d5d.png",
     "static/media/goals.jpg": "/portfolio/static/media/goals.9ef4997e525d04acd21a.jpg",
     "static/media/background5.jfif": "/portfolio/static/media/background5.43c96be33bf2d499b728.jfif",
@@ -23,12 +15,12 @@
     "static/media/github.svg": "/portfolio/static/media/github.4cd3a2bc790226c346ae943ec1622139.svg",
     "index.html": "/portfolio/index.html",
     "static/media/waveSVG.svg": "/portfolio/static/media/waveSVG.b3611704c80ec783cd93a67442e368df.svg",
-    "main.cb7d10f1.css.map": "/portfolio/static/css/main.cb7d10f1.css.map",
-    "main.d154cb93.js.map": "/portfolio/static/js/main.d154cb93.js.map",
+    "main.c380bb43.css.map": "/portfolio/static/css/main.c380bb43.css.map",
+    "main.3fbcfa66.js.map": "/portfolio/static/js/main.3fbcfa66.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb7d10f1.css",
-    "static/js/main.d154cb93.js"
+    "static/css/main.c380bb43.css",
+    "static/js/main.3fbcfa66.js"
   ]
 }
