@@ -31,43 +31,45 @@ const Header = () => {
   return (
     <>
     <header>
-      <div className='particles'>
-        <ParticlesBlackDots />
-      </div>
+        <div className='particles'>
+          <ParticlesBlackDots />
+        </div>
 
       <ul className="denav">
         <div className='Logo'>
           <a href='/portfolio' ><img src={logo} style={{ width: "50px", height: "auto" }} /></a>
         </div>
         <ul className="nav-links ">
-          <li>
+            <li><a href="#projects" class="link">
             <FontAwesomeIcon icon={faCode} className="fa-cog" />
-            <a href="#projects" class="link"> Projects</a>
+             Projects</a>
           </li>
           <li>
+              <a href="#skills" class="link">
             <FontAwesomeIcon icon={faTools} className="fa-cog" />
-            <a href="#skills" class="link"
-            ><i class="fas fa-tools"></i> Skills</a>
+             Skills</a>
           </li>
-          <li>
+          {/* <li>
+              <a href="#education" class="link">
             <FontAwesomeIcon icon={faGraduationCap} className="fa-cog" />
-            <a href="#education" class="link"> Education</a>
-          </li>
+            Education</a>
+          </li> */}
           <li>
+              <a href="https://a7m2a8t7.rocketcdn.me/wp-content/uploads/2021/05/Ronnie-Coleman-Leg-Workout-e1621309722852.jpg" class="link"
+                target="_blank">
             <FontAwesomeIcon icon={faFile} className="fa-cog" />
-            <a href="https://a7m2a8t7.rocketcdn.me/wp-content/uploads/2021/05/Ronnie-Coleman-Leg-Workout-e1621309722852.jpg" class="link"
-              target="_blank"> Resume</a>
+            Resume</a>
           </li>
           <li>
+              <a href="#contact" class="link">
             <FontAwesomeIcon icon={faEnvelope} className="fa-cog" />
-            <a href="#contact" class="link"> Contact</a>
+             Contact</a>
           </li>
         </ul>
       </ul>
 
       <div className='naam' data-aos="fade-up" data-aos-offset="-1500">
-        <h1> <strong>DIETER </strong><br></br> </h1>
-        <h1>VAN DER ZWALMEN</h1>
+          <h1> <strong>DIETER </strong><br></br> VAN DER ZWALMEN </h1>
         <h4> Applied informatics student at&nbsp;<strong>UCLL</strong></h4>
       </div>
       

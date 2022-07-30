@@ -52,4 +52,8 @@ footer ul li a svg {
     footer h4 {
         margin: 0 !important;
     }
+    .footerlinks svg {
+        height: 24px !important;
+        width: 24px !important;
+    }
 }

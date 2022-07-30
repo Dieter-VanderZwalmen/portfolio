@@ -18,7 +18,7 @@ const Skills = () => {
     return (
             
             <>
-            <DividerTop  />
+            
         <div className='projects blackbackground white-text' data-aos="fade-up" data-aos-offset= "-750" id="skills" >
                 
                 <h2>My <strong>Skills</strong></h2>
@@ -51,7 +51,6 @@ const Skills = () => {
                 </ul>
            
                 
-                <DividerTop className="flip" />
             </div>
         </>
            

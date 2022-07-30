@@ -45,7 +45,7 @@ const ParticlesBlackDots = () => {
                     },
                     modes: {
                         bubble: {
-                            distance: 400,
+                            distance: 100,
                             duration: 2,
                             opacity: 0.8,
                             size: 40,
@@ -64,7 +64,7 @@ const ParticlesBlackDots = () => {
                         value: "#ff0000",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#8f8f8f",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -84,9 +84,9 @@ const ParticlesBlackDots = () => {
                     number: {
                         density: {
                             enable: false,
-                            value: 700,
+                            value: 20,
                         },
-                        value: 80,
+                        value: 70,
                     },
                     opacity: {
                         value: 0.5,

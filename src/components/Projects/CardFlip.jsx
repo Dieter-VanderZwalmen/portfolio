@@ -4,6 +4,10 @@
 
 import {React, useState,useEffect} from 'react';
 import {Icon} from '@iconify/react';
+import Popup from 'reactjs-popup';
+import PopupComponent from './PopupComponent';
+
+import { useNavigate } from "react-router-dom";
 
 const CardFlip = (props) => {
     //flip state
@@ -42,10 +46,15 @@ const CardFlip = (props) => {
         setIsHovering(false);
     }
 
+    const goToLink = (path) =>{
+        window.location.href = path + "test";
+
+    }
+
 
 
     return ( 
-                
+        <div className='cardContainer'>
         <div class="card" onClick={() => flipCard()} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             
             <div class={`card__inner ${flip ? "" : "is-flipped"}`} >
@@ -57,13 +66,16 @@ const CardFlip = (props) => {
                         {isHovering ? <p className='white-text'>Click me!</p> : ""}
                     </div>
                     
-                    {props.githublink !== undefined ? <a href={props.githublink} target="_blank" class="btn btn-primary">Source code</a> : ""} 
+                    
+                        
+
+                    
                 </div>
                 <div class="card__face card__face--back">
                     <div class="card__content">
                         <div class="card__header">
                             
-                            <h2>{props.title}</h2>
+                            <h4>{props.title}</h4>
                         </div>
                         <div class="card__body">
                             <h3>{props.subtitle}</h3>
@@ -74,6 +86,11 @@ const CardFlip = (props) => {
             </div> 
             
          </div>
+
+         {/* <a className='btn btn-primary' href={props.link}>Demo</a> */}
+         <PopupComponent></PopupComponent>
+        </div>
+        
     );
 }
 

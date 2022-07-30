@@ -15,11 +15,11 @@ const Footer = () => {
 
                 {/* footer */}
                 <div className='voeter'>
+{/* 
+                    <h4>   <strong>DIETER</strong> <br></br> Van der Zwalmen</h4>
+                     */}
 
-                    <h4>   <strong>DIETER</strong> Van der Zwalmen</h4>
-                    
-
-                    <ul>
+                    <ul className='footerLinks'>
 
 
 

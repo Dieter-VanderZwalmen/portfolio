@@ -35,8 +35,8 @@ ul.skills svg{
     margin-bottom: 15%;
 }
 svg{
-    height: 90px;
-    width: 90px;
+    height: 10vh;
+    width: 10vh;
     transition: all .2s ease-in-out;
 }
 
@@ -49,3 +49,14 @@ transform: scale(1.1);
     transform: scale(1.1);
 }
 
+
+
+
+@media screen and (max-width: 600px) {
+    ul.skills svg {
+
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+}

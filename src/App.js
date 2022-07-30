@@ -42,9 +42,10 @@ function App() {
      <Header/>
       <Projects />
      <Skills/>
-     
-     <Contact />
-     <Footer />
+      <Contact />
+
+      <Footer />
+
     </BrowserRouter>
 
     

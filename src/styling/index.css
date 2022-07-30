@@ -19,6 +19,11 @@
 @import url(divider.css);
 
 
+/*scrollbar*/
+@import url(scrollbar.css);
+
+/*popup*/
+@import url(popup.css);
 
 
 /* global */
@@ -67,24 +72,7 @@ strong {
 .white-text,
 .white-text li p {
     color: white;
+    font-size: 1.8vh;
 }
 
 
-
-@media screen and (max-width: 800px) {
-
-    h4 {
-        margin-left: 3rem;
-        margin-right: auto;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-    h4 {
-        margin-left: 3rem;
-        margin-right: auto;
-        text-align: center;
-    }
-}

@@ -1,102 +1,50 @@
-/*header */
-
-/* particles een hoogte geven */
-
-h1 {
-    /* make the text size bigger */
-    font-size: 5.5rem;
-}
-
-.denav {
-    display: flex;
-    justify-content: space-around;
-    height: 5vh;
-    padding-top: 3%;
-
-}
-
-
-
-
-
-
-
-
-ul.nav-links {
-
-    display: flex;
-    justify-content: flex-end;
-
-    margin-right: 10px;
-
-}
-
-
-
-
-ul.nav-links li {
-    margin-left: 5px;
-    margin-right: 10px;
-
-
-}
-
-ul.nav-links li svg {
-    width: 20px;
-
-
-}
-
-ul.nav-links li a {
-    margin-left: 5px;
-    margin-right: 10px;
-
-}
-
-/* particles in de achtergrond zetten */
 .particles {
-    position: relative;
-    z-index: -5;
-}
-
-#tsparticles {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
+    z-index: -1;
+    height: 100vh !important;
+        width: 100% !important;
+        min-width: 100%;
+        max-width: 100%;
+
 }
 
+ #tsparticles {
+   
+    
+            height: 100vh !important;
+            width: 100% !important;
+        
+   
+ }
 
-/* fa icoontjes wit maken */
-.fa-cog {
-    color: rgb(255, 255, 255);
-}
-
-
-header h1,
-header h4 {
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-
-.naam {
-    margin-top: 13vh;
-    margin-bottom: 22vh;
-}
-
-/* nav link on hover underline animation */
-
-a.link:hover {
-    color: wheat;
+header {
+    min-height: 100vh;
 }
 
 a.link {
-    display: inline-block;
-    position: relative;
-    color: #ffffff;
     text-decoration: none;
+}
+
+
+/*remove ul bullet points */
+ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+}
+
+/*remove  text decoration on links */
+a {
+    color: var(--wit) !important;
+}
+
+a.link:hover {
+    color: wheat;
+    text-decoration: none;
+    
+}
+
+a.link {
+    position: relative;
 }
 
 a.link:after {
@@ -113,33 +61,120 @@ a.link:after {
 }
 
 a.link:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    transform: scaleX(0.5);
+    transform-origin: bottom right;
 }
 
-@media screen and (max-width: 600px) {
-    ul.nav-links {
-        padding-left: 0 !important;
-        display: flex;
-        justify-content: center;
 
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
+
+
+
+.fa-cog {
+    color: var(--wit);
+}
+
+h1,
+h4 {
+    color: var(--wit);
+}
+
+@media screen and (min-width: 0px) {
+   
+
+    .Logo {
+        padding-top: 2vh;
+        padding-left: 4vh;
+        align-self: center;
     }
 
+    header {
+        display: flex;
+        flex-direction: column;
+    }
 
     .denav {
-
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        align-self:center ;
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
+        justify-content: center;
+        font-size: 2.7vh;
+        margin-left: 5%;
+        margin-right: 5%;
+
+
     }
 
-    h4 {
-        margin-left: 2% !important;
+    .nav-links li {
+        margin-top: 2vh;
+
+    }
+
+    .naam {
+        text-align: center;
+        margin-top: 5vh;
+    }
+
+    .naam h1 {
+        margin-bottom: 5vh;
+    }
+
+
+}
+
+@media screen and (min-width: 420px) {
+    .nav-links{
+        flex-direction: row;
+        font-size: 3vh;
+    }
+    h1{
+        font-size: 8vh !important;
+    }
+    h4{
+        font-size: 3vh !important;
+        margin-left: 2%;
         margin-right: auto;
-
     }
+}
+
+@media screen and (min-width: 600px) {
+    
+
+    .Logo {
+        padding-top: 2vh;
+
+        align-self: center;
+    }
+
+   
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .Logo a img {
+            height: 8vh !important;
+            width: auto !important;
+        }
+   
+}
+
+@media screen and (min-width: 900px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+   a.link {
+        margin-left: 1vh;
+        margin-right: 1vh;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+ 
 }
