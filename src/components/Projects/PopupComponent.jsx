@@ -3,11 +3,6 @@ import Popup from 'reactjs-popup';
 
 
 
-/* deze werkt niet
-de popup wordt niet getoond door onbekende rede
-ik ga rond het "prolbem" lopen door een andere implementatie  in te voeren 
-*/
-
 export default () => (
     <Popup
         trigger={<button className="btn btn-primary"> Demo </button>}

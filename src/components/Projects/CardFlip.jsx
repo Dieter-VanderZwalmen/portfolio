@@ -8,6 +8,7 @@ import Popup from 'reactjs-popup';
 import PopupComponent from './PopupComponent';
 
 import { useNavigate } from "react-router-dom";
+import ModalComponent from "./ModalComponent";
 
 const CardFlip = (props) => {
     //flip state
@@ -88,7 +89,8 @@ const CardFlip = (props) => {
          </div>
 
          {/* <a className='btn btn-primary' href={props.link}>Demo</a> */}
-         <PopupComponent></PopupComponent>
+         {/* <PopupComponent></PopupComponent> */}
+         <ModalComponent title = {props.title}></ModalComponent>
         </div>
         
     );
