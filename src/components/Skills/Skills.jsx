@@ -18,8 +18,8 @@ const Skills = () => {
     return (
             
             <>
-            
-        <div className='projects blackbackground white-text' data-aos="fade-up" data-aos-offset= "-750" id="skills" >
+            <a class="anchor" id="skills"></a>
+        <div className='projects blackbackground white-text' data-aos="fade-up" data-aos-offset= "-900" >
                 
                 <h2>My <strong>Skills</strong></h2>
                 <hr className="white"></hr>

@@ -66,6 +66,18 @@ const CardFlip = (props) => {
                     <div >
                         {isHovering ? <p className='white-text'>Click me!</p> : ""}
                     </div>
+
+                    <div className='category'>
+                        {/* <p>{props.category}</p> */}
+                       
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -6 35.13 14">
+                          <path d="m 1 -6 V 8 H 26 C 40 8 39 -6 26 -6 V -6 H 26" fill="#000000"/>
+                        </svg>
+                      
+                        
+                        <p>backend</p>
+                        
+                    </div>
                     
                     
                         
@@ -90,7 +102,7 @@ const CardFlip = (props) => {
 
          {/* <a className='btn btn-primary' href={props.link}>Demo</a> */}
          {/* <PopupComponent></PopupComponent> */}
-         <ModalComponent title = {props.title}></ModalComponent>
+         <ModalComponent data-aos="fade-up"  img = {props.img} title = {props.title}></ModalComponent>
         </div>
         
     );

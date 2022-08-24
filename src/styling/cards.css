@@ -106,7 +106,7 @@ h4{
 
     }
     h2{
-        font-size: 3.5vh !important;
+        font-size: 35px !important;
     }
 }
 @media screen and (min-width: 320px) {
@@ -256,7 +256,7 @@ h2 {
    
     
     height: 10%;
-    font-size: 2vh;
+    font-size: 20px;
     font-weight: 500;
     color: var(--wit) !important;
     background-color: var(--grijs) !important;
@@ -304,6 +304,39 @@ h2 {
 
 .card__body p {
     color: var(--dark);
-    font-size: 1.5vh;
+    font-size: 15px;
     line-height: 1.4;
+}
+
+
+
+.category svg,.category p{
+position: absolute;
+bottom: 70px;
+
+
+border-radius: 50%;
+
+}
+
+
+.category svg{
+    margin: 0;
+    width: 100px;
+    height: 55px;
+    left: -12px;
+    
+    
+    
+    
+    
+    
+    
+    
+}
+.category p{
+    color: rgb(255, 255, 255);
+    left: 10px;
+    /*make the text bold */
+    font-weight: 500;
 }

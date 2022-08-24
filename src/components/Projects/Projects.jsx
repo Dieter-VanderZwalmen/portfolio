@@ -44,8 +44,8 @@ const Projects = () => {
                 <CardFlip title="Phoenix" subtitle="Website made with phoenix elixir" text="A websiite with basic CRUD operations, a database, relations between entities, security and i18n." img="la:phoenix-framework" githublink="https://github.com/ucll-internet-programming-major/project-jan-Dieter-VanderZwalmen" />
 
                 <CardFlip title="Scripting" subtitle="Scripting in Javascript and Python " text="Smalls scripts to automate exercises, provide information with the click of a button and ofcourse the exercises given in class! " img="bxl:python" githublink="https://github.com/Dieter-VanderZwalmen/Scripts" />
-
-                <CardFlip title="Devops" text="Basic knowledge devops. Experience with Kubernetes and Gitlab." img="clarity:ci-cd-line" githublink="https://git.uclllabs.be/r0795533" />
+{/* 
+                <CardFlip title="Devops" text="Basic knowledge devops. Experience with Kubernetes and Gitlab." img="clarity:ci-cd-line" githublink="https://git.uclllabs.be/r0795533" /> */}
 
                     
 

@@ -10,7 +10,6 @@
 
 
 
-
 .skills {
     background-color: white;
     display: flex;
@@ -34,7 +33,7 @@ ul.skills li{
 ul.skills svg{
     margin-bottom: 15%;
 }
-svg{
+.card__face center svg, .skills li svg{
     height: 10vh;
     width: 10vh;
     transition: all .2s ease-in-out;

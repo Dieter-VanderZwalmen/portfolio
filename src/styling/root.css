@@ -1,8 +1,18 @@
-:root {
+/* :root {
     --primaryGradient: #db5c5c;
     --secondaryGradient: #553636;
     --wit: #fff;
     --accent: #c51e1e;
     --shadow: #4b3838;
+    --grijs: #242424;
+} */
+/* to change the whole feel of the website change accent,grijs and the gradients*/
+
+:root {
+    --primaryGradient: #00305a;
+    --secondaryGradient: #4b6f3c;
+    --wit: #fff;
+    --accent: #00b7ff;
+    --shadow: #38454b;
     --grijs: #242424;
 }

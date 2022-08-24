@@ -38,7 +38,7 @@ a {
 }
 
 a.link:hover {
-    color: wheat;
+    color: var(--wit);
     text-decoration: none;
     
 }
@@ -55,7 +55,7 @@ a.link:after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ca2800;
+    background-color: var(--accent);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -77,6 +77,11 @@ h1,
 h4 {
     color: var(--wit);
 }
+a.link svg {
+    margin-left: 5vh;
+    margin-right: 1.5vh;
+}
+
 
 @media screen and (min-width: 0px) {
    
@@ -85,8 +90,12 @@ h4 {
         padding-top: 2vh;
         padding-left: 4vh;
         align-self: center;
-    }
+        
 
+    }
+    .Logo:hover {
+        transform: scale(1.1);
+    }
     header {
         display: flex;
         flex-direction: column;
@@ -103,7 +112,7 @@ h4 {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        font-size: 2.7vh;
+        font-size: 27px;
         margin-left: 5%;
         margin-right: 5%;
 
@@ -130,13 +139,13 @@ h4 {
 @media screen and (min-width: 420px) {
     .nav-links{
         flex-direction: row;
-        font-size: 3vh;
+        font-size: 30px;
     }
     h1{
-        font-size: 8vh !important;
+        font-size: 80px !important;
     }
     h4{
-        font-size: 3vh !important;
+        font-size: 30px !important;
         margin-left: 2%;
         margin-right: auto;
     }

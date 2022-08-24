@@ -1,0 +1,82 @@
+.modal-90w {
+    width: 90% !important;
+    
+    max-width: none!important;
+}
+
+.modal-body h4{
+    margin: 0;
+    text-align: left;
+}
+.modal-content, .modal-content p {
+    background: var(--grijs) !important;
+    color: var(--wit);
+    font-size: 15px;
+    border-radius: 16px !important;
+}
+.modal-title{
+    margin-bottom: 4vh !important;
+}
+
+.modal-title svg{
+    color: rgba(255, 255, 255, 0.055);
+    position: absolute;
+    top: 2 !important;
+    left: 2 !important;
+    height: 10vh;
+    width: 10vh;
+}
+.modal-header{
+    border-bottom: 3px solid var(--primaryGradient) !important;
+    
+}
+
+/* no idea why but right: 0 is the only one that works thats why I also set margins*/
+.modal-header button{
+    /*put the button in the top right corner */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 15px;    
+
+}
+@media screen and (min-width: 0px) {
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+    
+
+}
+
+@media screen and (min-width: 420px) {
+   
+}
+
+@media screen and (min-width: 600px) {
+
+.modal-body h6 {
+    /*increase the text size */
+    font-size: 17px;
+}
+    
+
+
+}
+
+@media screen and (min-width: 768px) {
+   
+}
+
+@media screen and (min-width: 900px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
+ 
+}
