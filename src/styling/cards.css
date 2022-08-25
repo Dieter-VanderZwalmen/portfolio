@@ -308,8 +308,20 @@ h2 {
     line-height: 1.4;
 }
 
+.card__face hr{
+    position: absolute;
+    top: 47%;
 
+}
+.description {
+    width: 60%;
+    position: absolute;
+    top: 60%;
+}
 
+.logo-title{
+    margin-top: 10%;
+}
 /* .category svg,.category p{
 position: absolute;
 bottom: 70px;

@@ -31,7 +31,7 @@ const Projects = () => {
             
             <h2 style= {{color: "black"}}>My <strong>Projects</strong></h2>
             <hr className='black'></hr>
-            <h4 style={{ color:"black",display: "flex", justifyContent: "center" }}>Here are all my most noteworthy projects that I have made over the years. Click the cards to get a quick summary.</h4>
+            <h4 style={{ color:"black",display: "flex", justifyContent: "center" }}>Here are all my most noteworthy projects that I have made over the years.</h4>
 
             <div className='cards' data-aos="fade-up" data-aos-offset="-500">
                 

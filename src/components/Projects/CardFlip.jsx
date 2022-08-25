@@ -38,12 +38,12 @@ const CardFlip = (props) => {
     , [])
 
     const handleMouseOver = () => {
-        console.log("mouse over" + isHovering);
+       // console.log("mouse over" + isHovering);
         setIsHovering(true);
     }
 
     const handleMouseOut = () => {
-        console.log("mouse out" + isHovering);
+        //console.log("mouse out" + isHovering);
         setIsHovering(false);
     }
 
@@ -60,10 +60,12 @@ const CardFlip = (props) => {
             
             <div class={`card__inner`} >
                  <div class="card__face card__face--front">
-                    <center>< Icon icon={props.img} style={{ color: 'white', marginTop: "10%" }} /></center>
+                    <div className='logo-title'>
+                    <center>< Icon icon={props.img} style={{ color: 'white'}} /></center>
                     
                     <h2>{props.title}</h2>
                     {/* hr with the className="white" */}
+                    </div>
                     <hr className="white"></hr>
 
 

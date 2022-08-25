@@ -22,8 +22,20 @@ const Contact = () => {
             <hr className='black'></hr>
                 <div className='skills'>
                 <ul className='skills'>
-                        <a href='mailto:dieter.vanderzwalmen@student.ucll.be' data-aos="fade-up" data-aos-offset="-750" >  <li> <Icon icon="ci:mail" style={{ color: 'var(--grijs)' }} /> <p>Mail</p></li> </a>
-                        <a href="https://www.linkedin.com/in/dieter-vdz/" data-aos="fade-up" data-aos-offset="-750" > <li> <Icon icon="akar-icons:linkedin-box-fill" style={{ color: 'var(--grijs)' }} /> <p>Linkedin</p></li> </a>
+                        {/* <a href='mailto:dieter.vanderzwalmen@student.ucll.be' data-aos="fade-up" data-aos-offset="-750" >  */}
+                        <a href='mailto:dieter.vanderzwalmen@student.ucll.be'> 
+                         <li> 
+                            <Icon icon="ci:mail" style={{ color: 'var(--grijs)' }} /> 
+                            <p>Mail</p>
+                        </li> 
+                        </a>
+                        {/* <a href="https://www.linkedin.com/in/dieter-vdz/" data-aos="fade-up" data-aos-offset="-750" > */}
+                        <a href="https://www.linkedin.com/in/dieter-vdz/" >
+                             <li> 
+                                <Icon icon="akar-icons:linkedin-box-fill" style={{ color: 'var(--grijs)' }} /> 
+                                <p>Linkedin</p>
+                            </li> 
+                        </a>
                     
                         {/* <a href="tel:+00000000" data-aos="fade-up" data-aos-offset="-750" > <li> <Icon icon="nimbus:telephone" style={{ color: 'var(--grijs)' }} /> <p>Telephone</p></li></a> */}
                     </ul>

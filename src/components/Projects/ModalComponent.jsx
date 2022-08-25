@@ -16,8 +16,8 @@ const ModalComponent = (props) => {
       infoMap: [
         {
           map1: [{
-            subtitle: "Create Read Update Delete",
-            text: "Here I"  + <strong>create </strong> + "a collector,<strong>read </strong> all the collectors. Afterwards I can <strong>update </strong> and <strong>delete </strong> the collector.",
+            subtitle: "THIS IS JUST FILLER TEXT Create Read Update Delete",
+            text: ["Here I ", <strong>create </strong> ,"a collector ",<strong>read </strong>, "all the collectors. Afterwards I can ", <strong>update </strong> ," and ", <strong>delete </strong>, "the collector."],
             image: "https://source.unsplash.com/random/800x600"
           },],
           map2: [{
@@ -126,15 +126,19 @@ const ModalComponent = (props) => {
     }
   ]
 
+
+
   //get the project with name == x
-  const project = projects.find(project => project.name === props.title);
+  var project = projects.find(project => project.name === props.title);
+
+  //this is a very very bad implementation but it works
+  
+
+  
+
+ 
 
 
-
-  console.log(project)
-
-
-  // console.log("subtitle" + project?.infoMap[0]?.encodingMap[0]?.subtitle)
 
 
 
