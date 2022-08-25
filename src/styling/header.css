@@ -21,7 +21,7 @@ header {
     min-height: 100vh;
 }
 
-a.link {
+a.link,.nav-links li a {
     text-decoration: none;
 }
 
@@ -50,18 +50,18 @@ a.link {
 a.link:after {
     content: '';
     position: absolute;
-    width: 100%;
     transform: scaleX(0);
+    width: 100%;
     height: 2px;
     bottom: 0;
-    left: 0;
+    right: 0;
     background-color: var(--accent);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
 
 a.link:hover:after {
-    transform: scaleX(0.5);
+    transform: scaleY(0.5);
     transform-origin: bottom right;
 }
 
@@ -77,7 +77,7 @@ h1,
 h4 {
     color: var(--wit);
 }
-a.link svg {
+.nav-links li svg {
     margin-left: 5vh;
     margin-right: 1.5vh;
 }
@@ -147,7 +147,7 @@ a.link svg {
     h4{
         font-size: 30px !important;
         margin-left: 2%;
-        margin-right: auto;
+        margin-right: 2%;
     }
 }
 

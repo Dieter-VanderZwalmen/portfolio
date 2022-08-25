@@ -40,37 +40,34 @@ const Header = () => {
           <a href='/portfolio' ><img src={logo} style={{ width: "50px", height: "auto" }} /></a>
         </div>
         <ul className="nav-links ">
-            <li><a href="#projects" class="link">
+            <li><a href="#projects" >
             <FontAwesomeIcon icon={faCode} className="fa-cog" />
-             Projects</a>
+             <a className='link'>Projects</a></a>
           </li>
           <li>
-              <a href="#skills" class="link">
+              <a href="#skills" >
             <FontAwesomeIcon icon={faTools} className="fa-cog" />
-             Skills</a>
+            <a className='link'>Skills</a></a>
           </li>
-          {/* <li>
-              <a href="#education" class="link">
-            <FontAwesomeIcon icon={faGraduationCap} className="fa-cog" />
-            Education</a>
-          </li> */}
+         
           <li>
-              <a href="https://a7m2a8t7.rocketcdn.me/wp-content/uploads/2021/05/Ronnie-Coleman-Leg-Workout-e1621309722852.jpg" class="link"
+              <a href="https://a7m2a8t7.rocketcdn.me/wp-content/uploads/2021/05/Ronnie-Coleman-Leg-Workout-e1621309722852.jpg" 
                 target="_blank">
             <FontAwesomeIcon icon={faFile} className="fa-cog" />
-            Resume</a>
+            <a className='link'>Resume</a></a>
           </li>
           <li>
-              <a href="#contact" class="link">
+              <a href="#contact">
             <FontAwesomeIcon icon={faEnvelope} className="fa-cog" />
-             Contact</a>
+            <a className='link'>Contact</a> </a>
           </li>
         </ul>
       </ul>
 
       <div className='naam' data-aos="fade-up" data-aos-offset="-1500">
-          <h1> <strong>DIETER </strong><br></br> VAN DER ZWALMEN </h1>
+          <h1> <strong>DIETER </strong><br></br> VAN DER ZWALMEN</h1>
         <h4> Applied informatics student at&nbsp;<strong>UCLL</strong></h4>
+        <h4>This site is not finished!</h4>
       </div>
       
     </header>

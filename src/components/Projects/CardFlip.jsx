@@ -58,44 +58,20 @@ const CardFlip = (props) => {
         <div className='cardContainer'>
         <div class="card" onClick={() => flipCard()} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             
-            <div class={`card__inner ${flip ? "" : "is-flipped"}`} >
+            <div class={`card__inner`} >
                  <div class="card__face card__face--front">
                     <center>< Icon icon={props.img} style={{ color: 'white', marginTop: "10%" }} /></center>
                     
                     <h2>{props.title}</h2>
-                    <div >
-                        {isHovering ? <p className='white-text'>Click me!</p> : ""}
-                    </div>
+                    {/* hr with the className="white" */}
+                    <hr className="white"></hr>
 
-                    <div className='category'>
-                        {/* <p>{props.category}</p> */}
-                       
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -6 35.13 14">
-                          <path d="m 1 -6 V 8 H 26 C 40 8 39 -6 26 -6 V -6 H 26" fill="#000000"/>
-                        </svg>
-                      
-                        
-                        <p>backend</p>
-                        
-                    </div>
-                    
-                    
-                        
 
-                    
+                         <div className='description'>
+                                <p>{props.text}</p>
+                         </div>
                 </div>
-                <div class="card__face card__face--back">
-                    <div class="card__content">
-                        <div class="card__header">
-                            
-                            <h4>{props.title}</h4>
-                        </div>
-                        <div class="card__body">
-                            <h3>{props.subtitle}</h3>
-                            <p>{props.text}</p>
-                        </div>
-                    </div>
-                </div>
+               
             </div> 
             
          </div>

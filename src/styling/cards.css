@@ -151,7 +151,7 @@ h4{
 }
 
 .card__inner:hover {
-    transform: rotateY(15deg) scale(1.05);
+    transform: scale(1.05);
 
 }
 
@@ -310,17 +310,17 @@ h2 {
 
 
 
-.category svg,.category p{
+/* .category svg,.category p{
 position: absolute;
 bottom: 70px;
 
 
 border-radius: 50%;
 
-}
+} */
 
 
-.category svg{
+/* .category svg{
     margin: 0;
     width: 100px;
     height: 55px;
@@ -337,6 +337,16 @@ border-radius: 50%;
 .category p{
     color: rgb(255, 255, 255);
     left: 10px;
-    /*make the text bold */
+    
     font-weight: 500;
+} */
+
+
+.description p  {
+    /*change text color to white*/
+    color: var(--wit);
+    /* center the text */
+    text-align: center;
+    
+
 }
