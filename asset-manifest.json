@@ -1,12 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.026747e8.css",
-    "main.js": "/portfolio/static/js/main.fc692de8.js",
+    "main.css": "/portfolio/static/css/main.c182fe7f.css",
+    "main.js": "/portfolio/static/js/main.a042228c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/TranslationENG.PNG": "/portfolio/static/media/TranslationENG.87a6cd05452c1e1ec591.PNG",
+    "static/media/TranslationDUTCH.PNG": "/portfolio/static/media/TranslationDUTCH.b2bdf4ec5057ff0176bb.PNG",
     "static/media/programmingGif.gif": "/portfolio/static/media/programmingGif.05f035b3a27b38553a6a.gif",
     "static/media/profielfoto.jfif": "/portfolio/static/media/profielfoto.da56c2185ac8f9b7956c.jfif",
+    "static/media/APIOverview.PNG": "/portfolio/static/media/APIOverview.137dd957c6bdce18c3b2.PNG",
+    "static/media/APIError.png": "/portfolio/static/media/APIError.9032cfc7fea4b768dbc2.png",
+    "static/media/APIAddCollector.PNG": "/portfolio/static/media/APIAddCollector.5c3abb691a74c275df17.PNG",
+    "static/media/FilterYearAndBefore.PNG": "/portfolio/static/media/FilterYearAndBefore.c9e9c71ec8a384ddb15d.PNG",
+    "static/media/FilterYearCronological.PNG": "/portfolio/static/media/FilterYearCronological.5e655cf94c8aee918ce5.PNG",
+    "static/media/FilterAlphabeticalCountry.PNG": "/portfolio/static/media/FilterAlphabeticalCountry.a5d82441691bce594ae9.PNG",
+    "static/media/Pagination.png": "/portfolio/static/media/Pagination.22d09fe21493c157f7d9.png",
+    "static/media/FilterCountry.PNG": "/portfolio/static/media/FilterCountry.4fb486df29c01e46fffc.PNG",
     "static/media/Read.PNG": "/portfolio/static/media/Read.1d208d6c612a4528b3d9.PNG",
+    "static/media/Pagination2.png": "/portfolio/static/media/Pagination2.98056ca870e1a542a2c7.png",
+    "static/media/FilterYear.PNG": "/portfolio/static/media/FilterYear.5cbcf62d027428c2766f.PNG",
+    "static/media/Validation1.png": "/portfolio/static/media/Validation1.d28c37ae2e1bbc28b797.png",
+    "static/media/Login.PNG": "/portfolio/static/media/Login.430beadb6ae08612af00.PNG",
     "static/media/logo.png": "/portfolio/static/media/logo.564c900d5537757f9d5d.png",
+    "static/media/Validation2.png": "/portfolio/static/media/Validation2.c21e79c075ae5c21670a.png",
+    "static/media/Delete.png": "/portfolio/static/media/Delete.63ca5370d2f1b7a20733.png",
+    "static/media/Update.PNG": "/portfolio/static/media/Update.d8c49f4dcba678405796.PNG",
     "static/media/background5.jfif": "/portfolio/static/media/background5.43c96be33bf2d499b728.jfif",
     "static/media/c-sharp-c-seeklogo.com.svg": "/portfolio/static/media/c-sharp-c-seeklogo.com.e2c0510d2b743a87e7621b703ba07906.svg",
     "static/media/ISO_C++_Logo.svg": "/portfolio/static/media/ISO_C++_Logo.2441702dffa95ca3c92c20816e386640.svg",
@@ -15,12 +32,12 @@
     "static/media/github.svg": "/portfolio/static/media/github.4cd3a2bc790226c346ae943ec1622139.svg",
     "index.html": "/portfolio/index.html",
     "static/media/waveSVG.svg": "/portfolio/static/media/waveSVG.b3611704c80ec783cd93a67442e368df.svg",
-    "main.026747e8.css.map": "/portfolio/static/css/main.026747e8.css.map",
-    "main.fc692de8.js.map": "/portfolio/static/js/main.fc692de8.js.map",
+    "main.c182fe7f.css.map": "/portfolio/static/css/main.c182fe7f.css.map",
+    "main.a042228c.js.map": "/portfolio/static/js/main.a042228c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.026747e8.css",
-    "static/js/main.fc692de8.js"
+    "static/css/main.c182fe7f.css",
+    "static/js/main.a042228c.js"
   ]
 }
