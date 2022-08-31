@@ -1,13 +1,12 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom';
-import { useFlip } from "react-easy-flip";
+// import { Link } from 'react-router-dom';
+// import { useFlip } from "react-easy-flip";
 
-import waveSVG from '../assets/waveSVG.svg';
-import profielfoto from '../assets/profielfoto.jfif';
-import programmingGif from '../assets/programmingGif.gif';
+// import profielfoto from '../assets/profielfoto.jfif';
+// import programmingGif from '../assets/programmingGif.gif';
 
-import { fontawesome } from '@fortawesome/fontawesome'
+// import { fontawesome } from '@fortawesome/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faCode, faGraduationCap, faTools, faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
@@ -17,7 +16,7 @@ import logo from '../assets/logo.png';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
-import {Triangle} from './Divider';
+// import {Triangle} from './Divider';
 const Header = () => {
   const [selectedTab, setSelectedTab] = React.useState("");
 
