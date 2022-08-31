@@ -16,12 +16,17 @@ const ModalComponent = (props) => {
       infoMap: [
         {
           map1: [{
-            subtitle: "THIS IS JUST FILLER TEXT Create Read Update Delete",
+            subtitle: [<strong>Reading </strong>, " all the coins in the database"],
             text: ["Here I ", <strong>create </strong> ,"a collector ",<strong>read </strong>, "all the collectors. Afterwards I can ", <strong>update </strong> ," and ", <strong>delete </strong>, "the collector."],
             image: "https://source.unsplash.com/random/800x600"
           },],
           map2: [{
-            subtitle: "Decoding of the file",
+            subtitle: "API REST controller",
+            text: "The file will be decompressed. All the characters have been restored. And file size is now the same as before.",
+            image: "https://source.unsplash.com/random/800x600"
+          },],
+          map3: [{
+            subtitle: "Internationalization",
             text: "The file will be decompressed. All the characters have been restored. And file size is now the same as before.",
             image: "https://source.unsplash.com/random/800x600"
           },]
@@ -176,38 +181,42 @@ const ModalComponent = (props) => {
             {/* This implemenation is not clean. I dont know why but project.infoMap[0].map to get all the maps does not work.*/}
             
             {project?.infoMap[0]?.map1?.map((m) => (
-              <div className='cards'>
+              
                 
+              <div className='modal-inhoud'>
+                <h4>{m.subtitle}</h4>
+                <p>{m.text}</p>
+                <div className='modal-gif'>
+                <img src={m.image} alt="img" />
+                </div>
+                </div>
                 
+            ))}
+
+            {project?.infoMap[0]?.map2?.map((m) => (
+              <div className='modal-inhoud'>
                 <h4>{m.subtitle}</h4>
                 <p>{m.text}</p>
                 <img src={m.image} alt="img" />
               </div>
             ))}
 
-            {project?.infoMap[0]?.map2?.map((m) => (
-              <Modal.Body>
-                <h4>{m.subtitle}</h4>
-                <p>{m.text}</p>
-                <img src={m.image} alt="img" />
-              </Modal.Body>
-            ))}
-
 
             {project?.infoMap[0]?.map3?.map((m) => (
-              <Modal.Body>
+              <div className='modal-inhoud'>
                  <h4>{m.subtitle}</h4>
                 <p>{m.text}</p>
                 <img src={m.image} alt="img" />
-              </Modal.Body>
+              </div>
             ))}
              {project?.infoMap[0]?.map4?.map((m) => (
-              <Modal.Body>
+              <div className='modal-inhoud'>
                 <h4>{m.subtitle}</h4>
                 <p>{m.text}</p>
                 <img src={m.image} alt="img" />
-              </Modal.Body>
+              </div>
             ))}
+              
             
           </Modal.Body>
         </Modal>

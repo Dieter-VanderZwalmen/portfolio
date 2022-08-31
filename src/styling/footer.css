@@ -1,15 +1,17 @@
 footer {
     background-color: var(--grijs);
     display: flex !important;
-    flex-direction: column;
     align-items: center;
     padding-top: 2%;
+    justify-content: space-between;
+
 
 }
 
 .voeter {
     padding-top: 1%;
     padding-bottom: 1%;
+    
 
     display: flex !important;
     justify-content: center;
@@ -17,6 +19,10 @@ footer {
     align-content: center;
     align-items: center;
 
+}
+.voeter, footer img{
+    margin-left: 35px !important;
+    margin-right: 35px !important;
 }
 
 footer ul {
@@ -26,6 +32,10 @@ footer ul {
 
 footer h4 {
     color: white;
+}
+.footerLinks li a svg {
+    height: 5vh !important;
+    
 }
 
 

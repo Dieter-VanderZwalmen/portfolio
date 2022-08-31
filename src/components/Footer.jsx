@@ -11,13 +11,13 @@ const Footer = () => {
             <footer>
                 <img src={logo} style={{ width: "50px", height: "auto" }} />
 
-                    
+                <h4>   <strong>DIETER</strong> <br></br> Van der Zwalmen</h4>
 
                 {/* footer */}
                 <div className='voeter'>
-{/* 
-                    <h4>   <strong>DIETER</strong> <br></br> Van der Zwalmen</h4>
-                     */}
+
+                    
+                    
 
                     <ul className='footerLinks'>
 
@@ -25,8 +25,8 @@ const Footer = () => {
 
 
                         <li> <a href="https://github.com/Dieter-VanderZwalmen"> <FontAwesomeIcon icon={faGithub} color="white" /></a>  </li>
-                        <li> <a href="https://www.linkedin.com/in/dieter-vdz/"><FontAwesomeIcon icon={faLinkedin} color="white" /></a> </li>
-                        <li><a href="mailto:dieter.vanderzwalmen@student.ucll.be"><FontAwesomeIcon icon={faEnvelope} color="white" /></a> </li>
+                        {/* <li> <a href="https://www.linkedin.com/in/dieter-vdz/"><FontAwesomeIcon icon={faLinkedin} color="white" /></a> </li>
+                        <li><a href="mailto:dieter.vanderzwalmen@student.ucll.be"><FontAwesomeIcon icon={faEnvelope} color="white" /></a> </li> */}
                     </ul>
                     
                 </div>

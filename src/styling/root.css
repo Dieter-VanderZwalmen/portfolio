@@ -1,3 +1,4 @@
+/* red */
 /* :root {
     --primaryGradient: #db5c5c;
     --secondaryGradient: #553636;
@@ -8,6 +9,8 @@
 } */
 /* to change the whole feel of the website change accent,grijs and the gradients*/
 
+
+/* blue light blue */
 :root {
     --primaryGradient: #00305a;
     --secondaryGradient: #4b6f3c;
@@ -16,3 +19,15 @@
     --shadow: #38454b;
     --grijs: #242424;
 }
+
+
+/* blue purple */
+/* :root {
+    --primaryGradient: #8312A5;
+    --secondaryGradient: #0037A5;
+    --wit: #fff;
+    --accent: #0037A5;
+    --shadow: #38454b;
+    --grijs: #242424;
+} */
+

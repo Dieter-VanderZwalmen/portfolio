@@ -57,7 +57,7 @@
 }
 
 .cards {
-
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -138,6 +138,15 @@ h4{
     .cardContainer {
         
         width: 31%;
+    }
+  
+}
+@media screen and (min-width: 1250px) {
+
+    .cards{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 
@@ -245,7 +254,9 @@ h2 {
             white);
 } */
 
-
+.projects h4{
+    margin-bottom: 3vh;
+}
 
 .btn.btn-primary {
     /*center the button */
@@ -254,7 +265,8 @@ h2 {
 
   
    
-    
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     height: 10%;
     font-size: 20px;
     font-weight: 500;

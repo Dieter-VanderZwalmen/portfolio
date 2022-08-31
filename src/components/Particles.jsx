@@ -61,7 +61,7 @@ const ParticlesBlackDots = () => {
                 },
                 particles: {
                     color: {
-                        value: "#00b7ff",
+                        value: "#0037A5",
                     },
                     links: {
                         color: "#8f8f8f",

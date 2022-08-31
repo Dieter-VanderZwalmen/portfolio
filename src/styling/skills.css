@@ -33,14 +33,14 @@ ul.skills li{
 ul.skills svg{
     margin-bottom: 15%;
 }
-.card__face center svg, .skills li svg{
+.card__face center svg, .skills li svg, .skills li img{
     height: 10vh;
     width: 10vh;
     transition: all .2s ease-in-out;
 }
 
 
-ul svg:hover{
+ul svg:hover,.skills li img:hover{
 transform: scale(1.1);
 }
 .rotate:hover {

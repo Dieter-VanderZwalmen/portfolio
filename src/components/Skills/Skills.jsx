@@ -7,6 +7,9 @@ import { DividerTop } from '../Divider';
 
 import {react,useEffect} from 'react';
 import { faRotate } from "@fortawesome/free-solid-svg-icons";
+
+import csharp from "../../assets/Programming-Languages/c-sharp-c-seeklogo.com.svg"
+import cplusplus from "../../assets/Programming-Languages/ISO_C++_Logo.svg"
 const Skills = () => {
     useEffect(() => {
         AOS.init({
@@ -14,7 +17,7 @@ const Skills = () => {
         });
     }, []);
 
-    var color = "white";
+    var color = "";
     return (
             
             <>
@@ -24,11 +27,13 @@ const Skills = () => {
                 
                 <h2>My <strong>Skills</strong></h2>
                 <hr className="white"></hr>
-                <h4 style={{ display: "flex", justifyContent: "center" }}>All languages I have come in contact with.</h4>
+                <h4 style={{ display: "flex", justifyContent: "center" }}>All languages I have used, learnt and implemented in projects.</h4>
                 <ul className="skills blackbackground white-text" >
                 <li> <Icon icon="logos:java" style={{ color }}  /> <p>Java</p></li>
-                <li> <Icon icon="teenyicons:c-sharp-solid" style={{ color }} /> <p>C#</p></li>
-                <li>  <Icon icon="bxl:c-plus-plus" style={{ color }} /> <p>C++</p></li>
+                {/* <li> <Icon icon="teenyicons:c-sharp-solid" style={{ color }} /> <p>C#</p></li>
+                <li>  <Icon icon="bxl:c-plus-plus" style={{ color }} /> <p>C++</p></li> */}
+                 <li> <img src={csharp} style={{height:" 95px", width:"95px"}}/> <p>C#</p></li>
+                <li>  <img src={cplusplus} style={{height:" 95px", width:"95px"}}/> <p>C++</p></li>
                 <li>  <Icon icon="logos:python" style={{ color }} /> <p>Python</p></li>
                 <li><Icon icon="logos:javascript" style={{ color }} /> <p>Javascript</p></li>
                 <li>  <Icon icon="logos:nodejs-icon" style={{ color }} /> <p>Nodejs</p></li>
