@@ -57,10 +57,10 @@ const ModalSpringboot = (props) => {
 
   return (
     <>
-      <div >
+      <div className='centered-title-text'>
         <h4>Overview of my version</h4>
-        <p>lorem ipsum the focus was on the backend. Doesnt crash no bugs, settings to customize the game including flooding board size and mine probability. The game was made with the help of a guide 
-          if you dont know how to game works "insertlink" explains it. </p>
+        <p>lorem ipsum . Doesnt crash no bugs, settings to customize the game including flooding board size and mine probability. The game was made with the help of a guide 
+          if you dont know how to game works <a href='https://mathworld.wolfram.com/Minesweeper.html#:~:text=Minesweeper%20is%20single%2Dplayer%20logic,a%20mine%2C%20the%20game%20ends.'target="_blank" style={{}}><strong>this</strong></a> explains it.the focus was on the backend </p>
       </div>
       <div className='left'>
         <div className='text'>
@@ -84,13 +84,15 @@ const ModalSpringboot = (props) => {
       <div className='left'>
         <div className='text'>
           <h4> <strong>F</strong>looding</h4>
-          <p> Lorem ipsum Flooding occurs when you reveal a block and there are no bombs in close proximity.If this happens the surrounding unopened blocks are revealed until all the blocks have mines surrounding. </p>
+          <p> Lorem ipsum Flooding occurs when you reveal a block and there are no bombs in close proximity.If this happens the surrounding unopened blocks are revealed until all the blocks have mines surrounding.
+            The buttons represent the board if flooding was enabled or disabled after pressing the block. </p>
         </div>
-        <div className='image-container slideshow '>
-          <div className='buttons-left-right'>
-            <button onClick={() => handleNext(0, 'flooding')} className={indexFlooding === 0 ? "Demo-button activeButton" : "Demo-button"}>Enabled</button>;
-            <button onClick={() => handleNext(1, 'flooding')} className={indexFlooding === 1 ? "Demo-button activeButton" : "Demo-button"}>Disabled</button>;
+        <div className='buttons-left-right'>
+            <button onClick={() => handleNext(0, 'flooding')} className={indexFlooding === 0 ? "Demo-button activeButton" : "Demo-button"}>Enabled</button>
+            <button onClick={() => handleNext(1, 'flooding')} className={indexFlooding === 1 ? "Demo-button activeButton" : "Demo-button"}>Disabled</button>
           </div>
+        <div className='image-container slideshow '>
+          
           <img src={imageListFlooding[indexFlooding]} alt="Flooding explained on the board" className='center' />
         </div>
       </div>
@@ -99,14 +101,15 @@ const ModalSpringboot = (props) => {
           <h4> <strong>B</strong>oardsize</h4>
           <p> Lorem ipsum These are examples of the different boardsizes. </p>
         </div>
-        <div className='image-container slideshow '>
-          <div className='buttons-left-right'>
-            <button onClick={() => handleNext(0, 'size')} className={indexPaginatie === 0 ? "Demo-button activeButton" : "Demo-button"}>6</button>;
-            <button onClick={() => handleNext(1, 'size')} className={indexPaginatie === 1 ? "Demo-button activeButton" : "Demo-button"}>10</button>;
-            <button onClick={() => handleNext(2, 'size')} className={indexPaginatie === 2 ? "Demo-button activeButton" : "Demo-button"}>15</button>;
-            <button onClick={() => handleNext(3, 'size')} className={indexPaginatie === 3 ? "Demo-button activeButton" : "Demo-button"}>20</button>;
+        <div className='buttons-left-right'>
+            <button onClick={() => handleNext(0, 'size')} className={indexSize === 0 ? "Demo-button activeButton" : "Demo-button"}>6</button>
+            <button onClick={() => handleNext(1, 'size')} className={indexSize === 1 ? "Demo-button activeButton" : "Demo-button"}>10</button>
+            <button onClick={() => handleNext(2, 'size')} className={indexSize === 2 ? "Demo-button activeButton" : "Demo-button"}>15</button>
+            <button onClick={() => handleNext(3, 'size')} className={indexSize === 3 ? "Demo-button activeButton" : "Demo-button"}>20</button>
 
           </div>
+        <div className='image-container slideshow '>
+          
           <img src={imageListSize[indexSize]} alt="Flooding explained on the board" className='center' />
         </div>
       </div>

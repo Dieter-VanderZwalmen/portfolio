@@ -1,8 +1,16 @@
+import { useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 
-const ParticlesBlackDots = () => {
+import useWindowDimensions from "./useWindowDimensions";
+
+const ParticlesBlackDots = (props) => {
 
 
+    const { height, width } = useWindowDimensions();
+    //create variable named linkLength
+
+
+    //console log the height and width of the window
 
 
     const particlesInit = (main) => {
@@ -14,97 +22,100 @@ const ParticlesBlackDots = () => {
     const particlesLoaded = (container) => {
         //console.log(container);
     };
-    return (
-        <Particles
+   
+        return (
 
 
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={{
-                fullScreen: false,
+
+            <Particles
 
 
-                background: {
-                    color: {
-                        value: "#242424",
-                    },
-                },
-                fpsLimit: 120,
-                interactivity: {
-                    events: {
-                        onClick: {
-                            enable: false,
-                            mode: "push",
+                id="tsparticles"
+                init={particlesInit}
+                loaded={particlesLoaded}
+                options={{
+                    fullScreen: false,
+
+
+                    background: {
+                        color: {
+                            value: "#242424",
                         },
-                        onHover: {
+                    },
+                    fpsLimit: 60,
+                    interactivity: {
+                        events: {
+                            onClick: {
+                                enable: false,
+                                mode: "push",
+                            },
+                            onHover: {
+                                enable: true,
+                                mode: "repulse",
+                            },
+                            resize: true,
+                        },
+                        modes: {
+                            bubble: {
+                                distance: 100,
+                                duration: 2,
+                                opacity: 0.8,
+                                size: 40,
+                            },
+                            push: {
+                                quantity: 4,
+                            },
+                            repulse: {
+                                distance: 75,
+                                duration: 0.4,
+                            },
+                        },
+                    },
+                    particles: {
+                        color: {
+                            value: "#00b7ff",
+                        },
+                        links: {
+                            color: "#8f8f8f",
+                            distance: props.distance,
                             enable: true,
-                            mode: "repulse",
+                            opacity: 0.5,
+                            width: 1,
                         },
-                        resize: true,
-                    },
-                    modes: {
-                        bubble: {
-                            distance: 100,
-                            duration: 2,
-                            opacity: 0.8,
-                            size: 40,
-                        },
-                        push: {
-                            quantity: 4,
-                        },
-                        repulse: {
-                            distance: 75,
-                            duration: 0.4,
-                        },
-                    },
-                },
-                particles: {
-                    color: {
-                        value: "#0037A5",
-                    },
-                    links: {
-                        color: "#8f8f8f",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                    },
-                    collisions: {
-                        enable: true,
-                    },
-                    move: {
-                        direction: "none",
-                        enable: true,
-                        outMode: "bounce",
-                        random: false,
-                        speed: 0.2,
-                        straight: false,
-                    },
-                    number: {
-                        density: {
+                        collisions: {
                             enable: false,
-                            value: 20,
                         },
-                        value: 70,
+                        move: {
+                            direction: "none",
+                            enable: true,
+                            outMode: "bounce",
+                            random: false,
+                            speed: 0.2,
+                            straight: false,
+                        },
+                        number: {
+                            density: {
+                                enable: false,
+                                value: 20,
+                            },
+                            value: 70,
+                        },
+                        opacity: {
+                            value: 0.5,
+                        },
+                        shape: {
+                            type: "circle",
+                        },
+                        size: {
+                            random: true,
+                            value: 5,
+                        },
                     },
-                    opacity: {
-                        value: 0.5,
-                    },
-                    shape: {
-                        type: "circle",
-                    },
-                    size: {
-                        random: true,
-                        value: 5,
-                    },
-                },
-                detectRetina: true,
-            }}
+                    detectRetina: true,
+                }}
 
-        />
-    );
-
+            />
+        );
+    
 }
-
-export default ParticlesBlackDots;
+    export default ParticlesBlackDots;

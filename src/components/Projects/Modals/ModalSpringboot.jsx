@@ -83,11 +83,12 @@ const ModalSpringboot = (props) => {
 
   return (
     <>
-      <div >
+      <div className="centered-title-text">
         <h4>Overview of all the functionalities</h4>
         <p>lorem ipsum site that covers all the basics. This includes creating,updating,deleting and reading objects. This is also called CRUD. The website also includes a rest api,translations,form validation. The focus of this project was on the backend. The frontend was kept simple and clear. </p>
       </div>
-      <div className='left'>
+      <div className="geenidee">
+      <div className='left' data-aos="fade-right" data-aos-offset= "0">
         <div className='text'>
           <h4> <strong>R</strong>ead</h4>
           <p> List of all the coins. </p>
@@ -96,7 +97,7 @@ const ModalSpringboot = (props) => {
           <img src={Read} alt="List of all the coins" className='center' />
         </div>
       </div>
-      <div className='right'>
+      <div className='right' data-aos="fade-left" data-aos-offset= "0">
         <div className='text'>
           <h4> <strong>C</strong>reate</h4>
           <p> Creating a new coin with a form. </p>
@@ -128,11 +129,12 @@ const ModalSpringboot = (props) => {
           <h4> <strong>P</strong>agination</h4>
           <p> The overview is limited to 5 collections per page. </p>
         </div>
+        <div className='buttons-left-right'>
+            <button   onClick={() => handleNext(0, 'paginatie')} className={indexPaginatie === 0 ? "Demo-button activeButton" : "Demo-button"}>1</button>
+            <button  onClick={() => handleNext(1, 'paginatie')} className={indexPaginatie === 1 ? "Demo-button activeButton" : "Demo-button"}>2</button>
+        </div>
         <div className='image-container slideshow '>
-          <div className='buttons-left-right'>
-            <button   onClick={() => handleNext(0, 'paginatie')} className={indexPaginatie === 0 ? "Demo-button activeButton" : "Demo-button"}>1</button>;
-            <button  onClick={() => handleNext(1, 'paginatie')} className={indexPaginatie === 1 ? "Demo-button activeButton" : "Demo-button"}>2</button>;
-          </div>
+          
           <img src={imageListPaginatie[indexPaginatie]} alt="Form to create a form" className='center' />
         </div>
       </div>
@@ -142,7 +144,10 @@ const ModalSpringboot = (props) => {
         <div className='text'>
           <h4> <strong>F</strong>iltering</h4>
           <p> All the coins can be filtered. </p>
-          <ul className='horizontal-list'>
+          
+        </div>
+      <div className='buttons-left-right'>
+        <ul className='horizontal-list'>
             <li>
               <button   onClick={() => handleNext(0, 'filter')} className={indexFilter === 0 ? "Demo-button activeButton" : "Demo-button"}>Country</button>
             </li>
@@ -159,7 +164,7 @@ const ModalSpringboot = (props) => {
               <button onClick={() => handleNext(4, 'filter')} className={indexFilter === 4 ? "Demo-button activeButton" : "Demo-button"}>Ordered by Year</button>
             </li>
           </ul>
-        </div>
+          </div>
         <div className='image-container slideshow slideshow-big'>
           <img src={imageListFilter[indexFilter]} alt="Form to create a form" className='center' />
         </div>
@@ -169,12 +174,12 @@ const ModalSpringboot = (props) => {
           <h4> <strong>V</strong>alidation</h4>
           <p> lorem ipsum all forms are validated and SQL injection protected to make sure only valid objects are made. When invalid data is submitted an appropriate error message is shown to let the user know what went wrong. </p>
         </div>
-
-        <div className='image-container '>
-          <div className='buttons-left-right'>
-            <button   onClick={() => handleNext(0, 'validation')} className={indexValidation === 0 ? "Demo-button activeButton" : "Demo-button"}>1</button>;
-            <button   onClick={() => handleNext(1, 'validation')} className={indexValidation === 1 ? "Demo-button activeButton" : "Demo-button"}>2</button>;
+        <div className='buttons-left-right'>
+            <button   onClick={() => handleNext(0, 'validation')} className={indexValidation === 0 ? "Demo-button activeButton" : "Demo-button"}>1</button>
+            <button   onClick={() => handleNext(1, 'validation')} className={indexValidation === 1 ? "Demo-button activeButton" : "Demo-button"}>2</button>
           </div>
+        <div className='image-container '>
+          
           <img src={imageListValidation[indexValidation]} alt="Form to create a form" className='center' />
         </div>
       </div>
@@ -183,9 +188,7 @@ const ModalSpringboot = (props) => {
           <h4> <strong>A</strong>pi</h4>
           <p> lorem ipsum Rest controller, api, json response, error handling,. </p>
         </div>
-
-        <div className='image-container slideshow '>
-          <div className='buttons-left-right'>
+        <div className='buttons-left-right'>
           <ul className='horizontal-list'>
           {/* APIOverview, APIError, APIAddCollector */}
             <li>
@@ -200,6 +203,8 @@ const ModalSpringboot = (props) => {
            
           </ul>
           </div>
+        <div className='image-container slideshow '>
+          
           <img src={imageListAPI[indexAPI]} alt="Form to create a form" className='center' />
         </div>
       </div>
@@ -208,8 +213,7 @@ const ModalSpringboot = (props) => {
           <h4> <strong>I</strong>nternationalisation</h4>
           <p> Lorem Ipsum. Internationalisation also known as i18n is applied to all text. One can either pick to get the English or the Dutch version of the site </p>
         </div>
-        <div className='image-container slideshow '>
-          <div className='buttons-left-right'>
+        <div className='buttons-left-right'>
           <ul className='horizontal-list'>
          
             <li>
@@ -222,6 +226,8 @@ const ModalSpringboot = (props) => {
            
           </ul>
           </div>
+        <div className='image-container slideshow '>
+         
           <img src={imageListi18n[indexi18n]} alt="Form to create a form" className='center' />
         </div>
       </div>
@@ -233,6 +239,7 @@ const ModalSpringboot = (props) => {
         <div className='image-container '>
           <img src={Login} alt="Form to create a form" className='center' />
         </div>
+      </div>
       </div>
     </>
   );

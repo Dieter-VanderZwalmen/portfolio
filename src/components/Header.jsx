@@ -10,7 +10,8 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faCode, faGraduationCap, faTools, faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
-import ParticlesBlackDots from '../components/Particles';
+import ParticlesHandler from '../components/ParticleHandler';
+// import ParticlesBlackDots from '../components/Particles';
 import logo from '../assets/logo.png';
 
 import AOS from "aos";
@@ -31,7 +32,7 @@ const Header = () => {
     <>
     <header>
         <div className='particles'>
-          <ParticlesBlackDots />
+          <ParticlesHandler />
         </div>
 
       <ul className="denav">
