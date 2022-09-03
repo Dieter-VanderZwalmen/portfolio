@@ -106,9 +106,7 @@ h4 {
         transform: scale(1.1);
     }
     header {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
     
@@ -133,6 +131,7 @@ h4 {
 
     .naam {
         text-align: center;
+        margin-bottom: 50%;
        
         
     
@@ -172,6 +171,15 @@ h4 {
         flex-direction: column;
 
        
+    }
+    header{
+        justify-content: center;
+    }
+    .naam {
+        margin-bottom: 0%;
+       
+        
+    
     }
 }
 

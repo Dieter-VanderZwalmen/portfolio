@@ -42,7 +42,7 @@ const ParticlesBlackDots = (props) => {
                             value: "#242424",
                         },
                     },
-                    fpsLimit: 60,
+                    fpsLimit: 25,
                     interactivity: {
                         events: {
                             onClick: {

@@ -30,8 +30,12 @@ const Skills = () => {
                 <h2>My <strong>Skills</strong></h2>
                 <hr className="white"></hr>
                 <h4 style={{ display: "flex", justifyContent: "center" }}>All languages and technologies I have used, learnt and implemented in projects.</h4>
-                <ul className="skills blackbackground white-text" data-aos="fade-up" data-aos-offset= "0" >
-                <li> <Icon icon="logos:java" style={{ color }}  /> <p>Java</p></li>
+                <ul className="skills blackbackground white-text">
+
+                {/* for loop that writes every element in iconList */}
+                {/* {iconList.map((icon) => (*/}
+
+                <li > <Icon icon="logos:java" style={{ color }}  /> <p>Java</p></li>
                 {/* <li> <Icon icon="teenyicons:c-sharp-solid" style={{ color }} /> <p>C#</p></li>
                 <li>  <Icon icon="bxl:c-plus-plus" style={{ color }} /> <p>C++</p></li> */}
                  <li> <img src={csharp} style={{height:" 95px", width:"95px"}}/> <p>C#</p></li>
