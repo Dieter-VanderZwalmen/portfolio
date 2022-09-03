@@ -2,7 +2,7 @@ import mail from '../../assets/mail.svg';
 import linkedin from '../../assets/linkedin.svg';
 import github from '../../assets/github.svg';
 import CardComponent from './CardComponent';
-import {Divider} from '../Divider';
+import {Divider,DividerTop} from '../Divider';
 import { Icon } from '@iconify/react';
 
 import AOS from "aos";
@@ -13,7 +13,7 @@ const Contact = () => {
     
     return (
             <>
-
+            
             <div className='projects' id="contact"  >
 
 
@@ -22,15 +22,15 @@ const Contact = () => {
             <hr className='black'></hr>
                 <div className='skills'>
                 <ul className='skills'>
-                        {/* <a href='mailto:dieter.vanderzwalmen@student.ucll.be' data-aos="fade-up" data-aos-offset="-750" >  */}
-                        <a href='mailto:dieter.vanderzwalmen@student.ucll.be'> 
+                        <a href='mailto:dieter.vanderzwalmen@student.ucll.be' data-aos="fade-right" data-aos-offset="0" > 
+                        {/* <a href='mailto:dieter.vanderzwalmen@student.ucll.be'>  */}
                          <li> 
                             <Icon icon="ci:mail" style={{ color: 'var(--grijs)' }} /> 
                             <p>Mail</p>
                         </li> 
                         </a>
-                        {/* <a href="https://www.linkedin.com/in/dieter-vdz/" data-aos="fade-up" data-aos-offset="-750" > */}
-                        <a href="https://www.linkedin.com/in/dieter-vdz/" >
+                        <a href="https://www.linkedin.com/in/dieter-vdz/" data-aos="fade-left" data-aos-offset="0" >
+                        {/* <a href="https://www.linkedin.com/in/dieter-vdz/" > */}
                              <li> 
                                 <Icon icon="akar-icons:linkedin-box-fill" style={{ color: 'var(--grijs)' }} /> 
                                 <p>Linkedin</p>

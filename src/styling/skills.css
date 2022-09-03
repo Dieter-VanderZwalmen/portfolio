@@ -52,7 +52,7 @@ transform: scale(1.1);
 
 
 @media screen and (max-width: 600px) {
-    ul.skills svg {
+    ul.skills svg, ul.skills img {
 
         height: 50px !important;
         width: 50px !important;

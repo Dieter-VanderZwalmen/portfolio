@@ -30,12 +30,14 @@ import TranslationDUTCH from '../../../assets/Demo/Springboot/TranslationDUTCH.P
 import TranslationENG from '../../../assets/Demo/Springboot/TranslationENG.PNG';
 
 const ModalSpringboot = (props) => {
+  const [imageListCRUD, setImageListCRUD] = useState([Create,Read, Update, Delete]);
   const [imageListPaginatie, setImageListPaginatie] = useState([Paginatie, Paginatie2]);
   const [imageListFilter, setImageListFilter] = useState([filterCountry, filterYear, filterYearAndBefore, FilterAlphabeticalCountry, FilterYearCronological]);
   const [imageListValidation, setImageListValidation] = useState([Valiation1, Valiation2, filterYearAndBefore, FilterAlphabeticalCountry, FilterYearCronological]);
   const [imageListAPI, setImageListAPI] = useState([APIOverview, APIAddCollector, APIError]);
   const [imageListi18n, setImageListi18n] = useState([TranslationENG, TranslationDUTCH]);
 
+  const [indexCRUD, setIndexCRUD] = useState(0);
   const [indexPaginatie, setIndexPaginatie] = useState(0);
   const [indexFilter, setIndexFilter] = useState(0);
   const [indexValidation, setIndexValidation] = useState(0);
@@ -45,6 +47,9 @@ const ModalSpringboot = (props) => {
 
   const handleNext = (index, type) => {
     switch (type) {
+      case 'CRUD':
+        setIndexCRUD(index);
+        break;
       case 'paginatie':
 
         setIndexPaginatie(index);
@@ -90,40 +95,21 @@ const ModalSpringboot = (props) => {
       <div className="geenidee">
       <div className='left' data-aos="fade-right" data-aos-offset= "0">
         <div className='text'>
-          <h4> <strong>R</strong>ead</h4>
-          <p> List of all the coins. </p>
+          <h4> <strong>CRUD</strong></h4>
+          
         </div>
-        <div className='image-container '>
-          <img src={Read} alt="List of all the coins" className='center' />
+        <div className='buttons-left-right'>
+            <button   onClick={() => handleNext(0, 'CRUD')} className={indexCRUD === 0 ? "Demo-button activeButton" : "Demo-button"}><strong>C</strong>reate</button>
+            <button   onClick={() => handleNext(1, 'CRUD')} className={indexCRUD === 1 ? "Demo-button activeButton" : "Demo-button"}><strong>R</strong>ead</button>
+            <button   onClick={() => handleNext(2, 'CRUD')} className={indexCRUD === 2 ? "Demo-button activeButton" : "Demo-button"}><strong>U</strong>pdate</button>
+            <button   onClick={() => handleNext(3, 'CRUD')} className={indexCRUD === 3 ? "Demo-button activeButton" : "Demo-button"}><strong>D</strong>elete</button>
         </div>
-      </div>
-      <div className='right' data-aos="fade-left" data-aos-offset= "0">
-        <div className='text'>
-          <h4> <strong>C</strong>reate</h4>
-          <p> Creating a new coin with a form. </p>
-        </div>
-        <div className='image-container '>
-          <img src={Create} alt="Form to create a form" className='center' />
+        <div className='image-container slideshow '>
+          
+          <img src={imageListCRUD[indexCRUD]} alt="Form to create a form" className='center' />
         </div>
       </div>
-      <div className='left'>
-        <div className='text'>
-          <h4> <strong>U</strong>pdate</h4>
-          <p> An existing coin can be updated. </p>
-        </div>
-        <div className='image-container '>
-          <img src={Update} alt="Form to create a form" className='center' />
-        </div>
-      </div>
-      <div className='right'>
-        <div className='text'>
-          <h4> <strong>D</strong>elete</h4>
-          <p> An existing coin can be deleted. </p>
-        </div>
-        <div className='image-container '>
-          <img src={Delete} alt="Form to create a form" className='center' />
-        </div>
-      </div>
+     
       <div className='left'>
         <div className='text'>
           <h4> <strong>P</strong>agination</h4>

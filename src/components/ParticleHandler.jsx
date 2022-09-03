@@ -8,6 +8,7 @@ const ParticlesHandler = () => {
     const { height, width } = useWindowDimensions();
     //create variable named linkLength
     const [linkLength, setLinkLength] = useState([150]);
+    const [amount, setAmount] = useState([70]);
 
     //console log the height and width of the window
     useEffect(() => {
@@ -15,15 +16,19 @@ const ParticlesHandler = () => {
         switch (true) {
             case width > 2000:
                 setLinkLength([300]);
+                setAmount([200]);
                 break;
             case width > 1800:
                 setLinkLength([250]);
+                setAmount([180]);
                 break;
             case width > 1600:
                 setLinkLength([200]);
+                setAmount([160]);
                 break;
             case width > 1400:
                 setLinkLength([150]);
+                setAmount([140]);
                 break;
                 
 
@@ -31,6 +36,7 @@ const ParticlesHandler = () => {
 
             default:
                 setLinkLength([150]);
+                setAmount([70]);
                 break;
         }
 

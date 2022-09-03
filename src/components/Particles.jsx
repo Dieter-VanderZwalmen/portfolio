@@ -96,9 +96,9 @@ const ParticlesBlackDots = (props) => {
                         number: {
                             density: {
                                 enable: false,
-                                value: 20,
+                                value:20,
                             },
-                            value: 70,
+                            value: props.aantal,
                         },
                         opacity: {
                             value: 0.5,

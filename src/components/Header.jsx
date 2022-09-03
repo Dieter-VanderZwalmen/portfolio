@@ -67,7 +67,7 @@ const Header = () => {
       <div className='naam' data-aos="fade-up" data-aos-offset="-1500">
           <h1> <strong>DIETER </strong><br></br> VAN DER ZWALMEN</h1>
         <h4> Applied informatics student at&nbsp;<strong>UCLL</strong></h4>
-        <h4>This site is not finished! The demos are still being worked on. I am still experimenting with colors, sizing and layout. </h4>
+        
       </div>
       
     </header>

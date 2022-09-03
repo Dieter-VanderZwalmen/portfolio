@@ -8,10 +8,8 @@ import { useState } from 'react'; // zet {} rond useState anders werkt de useSta
 
 
 
-import { Icon } from '@iconify/react';
-import {Triangle, Divider} from '../Divider';
 
-
+import { Divider } from '../Divider';
 
 
 const Projects = () => {
@@ -26,7 +24,7 @@ const Projects = () => {
     return (
 
         <>
-        
+        <Divider></Divider>
         <div className='projects whitebackground' id='projects'>
             
             <h2 style= {{color: "black"}}>My <strong>Projects</strong></h2>

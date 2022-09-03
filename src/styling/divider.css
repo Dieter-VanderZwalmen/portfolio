@@ -1,81 +1,22 @@
-/* onderkant */
-.custom-shape-divider-top-1657270381 {
-    position: relative;
-
-    left: 0;
+.custom-shape-divider-bottom-1662203521 {
+  
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    
 }
 
-.custom-shape-divider-top-1657270381 svg {
+.custom-shape-divider-bottom-1662203521 svg {
     position: relative;
     display: block;
-    width: calc(192% + 1.3px);
-    height: 75px;
-    transform: rotateY(180deg);
+    width: calc(120% + 1.3px);
+    height: 56px;
 }
 
-.custom-shape-divider-top-1657270381 .shape-fill {
-    fill: purple;
-}
-
-
-/* bovenkant */
-.custom-shape-divider-bottom-1657288424 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1657288424 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 55px;
-}
-
-.custom-shape-divider-bottom-1657288424 .shape-fill {
-    fill: var(--grijs);
-}
-
-
-
-.custom-shape-divider-top-1657455719 {
-    position: absolute;
-    left: 0;
-    width: calc(100% + 1.3px);
-    overflow: hidden;
-    line-height: 0;
-
-}
-
-.custom-shape-divider-top-1657455719 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 52px;
-
-}
-
-.custom-shape-divider-top-1657455719 .shape-fill {
+.custom-shape-divider-bottom-1662203521 .shape-fill {
     fill: #242424;
 }
 
-
-
-
-.triangleDivider {
-    position: absolute;
-    display: block;
-    width: 110%;
-    height: 35rem;
-    top: 0;
-    margin-top: -8rem;
-    transform: rotatez(90deg) rotatex(0deg);
-    
+.top{
+    transform: rotate(180deg);
 }

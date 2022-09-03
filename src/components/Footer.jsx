@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import logo from '../assets/logo.png';
-import Divider from './Divider';
+import {Divider,DividerTop} from './Divider';
 const Footer = () => {
     return (
         <>
+        <DividerTop></DividerTop>
             <footer>
                 <img src={logo} style={{ width: "50px", height: "auto" }} />
 
@@ -33,6 +34,7 @@ const Footer = () => {
                 
                
             </footer>
+            
         </>
     )
 }
