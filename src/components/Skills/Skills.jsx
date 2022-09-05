@@ -38,8 +38,8 @@ const Skills = () => {
                 <li > <Icon icon="logos:java" style={{ color }}  /> <p>Java</p></li>
                 {/* <li> <Icon icon="teenyicons:c-sharp-solid" style={{ color }} /> <p>C#</p></li>
                 <li>  <Icon icon="bxl:c-plus-plus" style={{ color }} /> <p>C++</p></li> */}
-                 <li> <img src={csharp} style={{height:" 95px", width:"95px"}}/> <p>C#</p></li>
-                <li>  <img src={cplusplus} style={{height:" 95px", width:"95px"}}/> <p>C++</p></li>
+                 <li> <img src={csharp} /> <p>C#</p></li>
+                <li>  <img src={cplusplus} /> <p>C++</p></li>
                 <li>  <Icon icon="logos:python" style={{ color }} /> <p>Python</p></li>
                 <li><Icon icon="logos:javascript" style={{ color }} /> <p>Javascript</p></li>
                 <li>  <Icon icon="logos:nodejs-icon" style={{ color }} /> <p>Nodejs</p></li>
@@ -56,7 +56,7 @@ const Skills = () => {
                 <li> <Icon icon="cib:cisco" style={{ color }} /> <p>Packet tracer</p></li>
                 <li> <Icon icon="flat-color-icons:linux" style={{ color }} /> <p>Linux</p></li>
                 
-                <li>  <img src={orange} style={{height:" 95px", width:"95px"}}/> <p>Orange data mining</p></li>
+                <li>  <img src={orange} /> <p>Orange data mining</p></li>
                 
                
                

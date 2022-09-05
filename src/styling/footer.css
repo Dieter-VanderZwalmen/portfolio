@@ -2,8 +2,9 @@ footer {
     background-color: var(--grijs);
     display: flex !important;
     align-items: center;
-    padding-top: 2%;
-    justify-content: space-between;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    justify-content: center;
 
 
 }

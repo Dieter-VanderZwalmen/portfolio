@@ -94,7 +94,12 @@
 h4{
     text-align: center;
 }
-
+.description{
+    font-size: 0.7rem !important;
+}
+h2{
+    font-size: 1.5rem !important;
+}
 @media screen and (min-width: 0px) {
 
     .cardContainer {
@@ -105,14 +110,12 @@ h4{
 
 
     }
-    h2{
-        font-size: 35px !important;
-    }
+    
 }
 @media screen and (min-width: 320px) {
 
     .cardContainer {
-        width: 90%;
+        width: 80%;
         
     }
     .card{
@@ -191,7 +194,7 @@ h4{
 .card__face--front h2 {
 
     color: #FFF;
-    font-size: 32px;
+    
 }
 
 h2 {
@@ -267,8 +270,8 @@ h2 {
    
     margin-top: 3vh;
     margin-bottom: 3vh;
+    padding-bottom: 9%;
     height: 10%;
-    font-size: 20px;
     font-weight: 500;
     color: var(--wit) !important;
     background-color: var(--grijs) !important;

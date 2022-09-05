@@ -2,7 +2,7 @@ import React from 'react'
 
 // import { Link } from 'react-router-dom';
 // import { useFlip } from "react-easy-flip";
-
+import "bootstrap/js/src/collapse.js";
 // import profielfoto from '../assets/profielfoto.jfif';
 // import programmingGif from '../assets/programmingGif.gif';
 
@@ -30,48 +30,81 @@ const Header = () => {
 
   return (
     <>
-    <header>
+      <header>
         <div className='particles'>
           <ParticlesHandler />
         </div>
-
-      <ul className="denav">
+        <nav class="hide-big  navbar navbar-expand-lg navbar-dark">
         <div className='Logo'>
-          <a href='/portfolio' ><img src={logo} style={{ width: "50px", height: "auto" }} /></a>
-        </div>
-        <ul className="nav-links ">
-            <li><a href="#projects" >
-            <FontAwesomeIcon icon={faCode} className="fa-cog" />
-             <a className='link'>Projects</a></a>
-          </li>
-          <li>
+            <a href='/portfolio' ><img src={logo} style={{ width: "30px", height: "auto" }} /></a>
+          </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+    <li><a href="#projects" >
+              <FontAwesomeIcon icon={faCode} className="fa-cog" />
+              <a className='link'>Projects</a></a>
+            </li>
+            <li>
               <a href="#skills" >
-            <FontAwesomeIcon icon={faTools} className="fa-cog" />
-            <a className='link'>Skills</a></a>
-          </li>
-         
-          <li>
-              <a href="https://a7m2a8t7.rocketcdn.me/wp-content/uploads/2021/05/Ronnie-Coleman-Leg-Workout-e1621309722852.jpg" 
-                target="_blank">
-            <FontAwesomeIcon icon={faFile} className="fa-cog" />
-            <a className='link'>Resume</a></a>
-          </li>
-          <li>
-              <a href="#contact">
-            <FontAwesomeIcon icon={faEnvelope} className="fa-cog" />
-            <a className='link'>Contact</a> </a>
-          </li>
-        </ul>
-      </ul>
+                <FontAwesomeIcon icon={faTools} className="fa-cog" />
+                <a className='link'>Skills</a></a>
+            </li>
 
-      <div className='naam' data-aos="fade-up" data-aos-offset="-1500">
+            <li>
+              <a href="https://a7m2a8t7.rocketcdn.me/wp-content/uploads/2021/05/Ronnie-Coleman-Leg-Workout-e1621309722852.jpg"
+                target="_blank">
+                <FontAwesomeIcon icon={faFile} className="fa-cog" />
+                <a className='link'>Resume</a></a>
+            </li>
+            <li>
+              <a href="#contact">
+                <FontAwesomeIcon icon={faEnvelope} className="fa-cog" />
+                <a className='link'>Contact</a> </a>
+            </li>
+    </ul>
+  </div>
+</nav>
+        <nav className="denav">
+          <div className='Logo'>
+            <a href='/portfolio' ><img src={logo} style={{ width: "30px", height: "auto" }} /></a>
+          </div>
+          
+          <ul className="nav-links ">
+            <li><a href="#projects" >
+              <FontAwesomeIcon icon={faCode} className="fa-cog" />
+              <a className='link'>Projects</a></a>
+            </li>
+            <li>
+              <a href="#skills" >
+                <FontAwesomeIcon icon={faTools} className="fa-cog" />
+                <a className='link'>Skills</a></a>
+            </li>
+
+            <li>
+              <a href="https://a7m2a8t7.rocketcdn.me/wp-content/uploads/2021/05/Ronnie-Coleman-Leg-Workout-e1621309722852.jpg"
+                target="_blank">
+                <FontAwesomeIcon icon={faFile} className="fa-cog" />
+                <a className='link'>Resume</a></a>
+            </li>
+            <li>
+              <a href="#contact">
+                <FontAwesomeIcon icon={faEnvelope} className="fa-cog" />
+                <a className='link'>Contact</a> </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div className='naam' data-aos="fade-up" data-aos-offset="-1500">
           <h1> <strong>DIETER </strong><br></br> VAN DER ZWALMEN</h1>
-        <h4> Applied informatics student at&nbsp;<strong>UCLL</strong></h4>
-        
-      </div>
-      
-    </header>
-      
+          <h4> Applied informatics student at&nbsp;<strong>UCLL</strong></h4>
+
+        </div>
+
+      </header>
+
     </>
   );
 

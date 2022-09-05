@@ -65,18 +65,9 @@ a.link:after {
     transition: transform 0.25s ease-out;
 }
 
-a.link:hover:after {
-    transform: scaleY(0.5);
-    transform-origin: bottom right;
-}
-
-.denav {
-
-    display: flex;
-    flex-direction: column;
 
 
-}
+
 
 
 
@@ -91,23 +82,44 @@ h4 {
     margin-right: 2%;
 }
 
-.nav-links li svg {
-    margin-left: 5vh;
-    margin-right: 1.5vh;
-}
 
 
 @media screen and (min-width: 0px) {
-
-
-    .Logo {
-        padding-top: 2vh;
-        padding-left: 4vh;
-        align-self: center;
-
-
+    .navbar{
+       
+        background-color: #ffffff16;
     }
-
+    .navbar-nav li a{
+        display: flex;
+        justify-content: space-between;
+        max-width: 15%;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+    }
+    .navbar-nav li svg{
+        /* set in the middle of the height */
+        margin-top: 1.0vh;
+        margin-bottom: 1.0vh;
+       
+    }
+    .transparent-background
+    {
+        background-color: rgba(255, 255, 255, 0) !important;
+    }
+    .denav{
+        display: none;
+    }
+    .nav-links{
+        display: none !important;
+       
+    }
+   
+    .Logo{
+        margin-top: 2vh;
+        margin-left: 1.5vh;
+        margin-bottom: 1.5vh;
+    }
+   
     .Logo:hover {
         transform: scale(1.1);
     }
@@ -118,18 +130,7 @@ h4 {
 
 
 
-    .nav-links {
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 27px;
-        margin-left: 5%;
-        margin-right: 5%;
-
-
-    }
+    
 
     .nav-links li {
         margin-top: 2vh;
@@ -146,27 +147,52 @@ h4 {
 
     .naam h1 {
         margin-bottom: 5vh;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
 
 }
 
 @media screen and (min-width: 420px) {
-    .nav-links {
-        flex-direction: row;
-        font-size: 30px;
+    .nav-links li a svg {
+        margin-right: 10px !important;
+        margin-left: 25px !important;
     }
+    a.link:hover:after {
+        transform: scaleY(0.5);
+        transform-origin: bottom right;
+    }
+    .hide-big{
+        display: none !important;
+    }
+    .denav {
 
-    h1 {
-        font-size: 65px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff00;
         
+    
+    }
+    .nav-links {
+        align-self: center;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        /* font-size: 27px; */
+        margin-left: 5%;
+        margin-right: 5%;
+
 
     }
+    
+
+  
 
     h4 {
-        font-size: 30px !important;
+        
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -200,7 +226,12 @@ h4 {
 }
 
 @media screen and (min-width: 600px) {
-
+   
+    .nav-links li a svg {
+        margin-right: 15px !important;
+        margin-left: 35px !important;
+    }
+    
 
     .Logo {
         padding-top: 2vh;
