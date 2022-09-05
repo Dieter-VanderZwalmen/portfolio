@@ -36,8 +36,11 @@
 }
 html {
     scroll-behavior: smooth;
+  
 }
-
+.max-width {
+    width: 100vw;
+}
 hr {
     border: none;
     height: 1px;

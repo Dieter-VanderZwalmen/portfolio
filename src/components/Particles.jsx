@@ -66,8 +66,8 @@ const ParticlesBlackDots = (props) => {
                                 quantity: 4,
                             },
                             repulse: {
-                                distance: 75,
-                                duration: 0.4,
+                                distance: 0,
+                                duration: 0,
                             },
                         },
                     },

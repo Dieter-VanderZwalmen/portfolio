@@ -30,13 +30,19 @@ const ParticlesHandler = () => {
                 setLinkLength([150]);
                 setAmount([140]);
                 break;
-                
-
+                case width > 600:
+                    setLinkLength([120]);
+                    setAmount([100]);
+                    break;    
+                    case width > 400:
+                        setLinkLength([90]);
+                        setAmount([70]);
+                        break; 
 
 
             default:
-                setLinkLength([150]);
-                setAmount([70]);
+                setLinkLength([90]);
+                setAmount([50]);
                 break;
         }
 

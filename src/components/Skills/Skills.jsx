@@ -10,7 +10,7 @@ import csharp from "../../assets/Programming-Languages/c-sharp-c-seeklogo.com.sv
 import cplusplus from "../../assets/Programming-Languages/ISO_C++_Logo.svg"
 import orange from "../../assets/orange.png"
 
-import { Divider,DividerTop } from "../Divider";
+import { Divider,DividerTop,DividerTriangle,DividerTriangleTop } from "../Divider";
 const Skills = () => {
     useEffect(() => {
         AOS.init({

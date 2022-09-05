@@ -2,29 +2,31 @@
     position: absolute;
     z-index: -1;
     height: 100vh !important;
-        width: 100% !important;
-        min-width: 100%;
-        max-width: 100%;
+    width: 100% !important;
+    min-width: 100%;
+    max-width: 100%;
 
 }
 
- #tsparticles {
-   
-    
-            height: 100vh !important;
-            width: 100% !important;
-            
-        
-   
- }
+#tsparticles {
+
+
+    height: 100vh !important;
+    width: 100% !important;
+
+
+
+}
 
 header {
     min-height: 100vh;
+    height: 100vh;
     display: flex !important;
     justify-content: space-between;
 }
 
-a.link,.nav-links li a {
+a.link,
+.nav-links li a {
     text-decoration: none;
 }
 
@@ -43,7 +45,7 @@ a {
 a.link:hover {
     color: var(--wit);
     text-decoration: none;
-    
+
 }
 
 a.link {
@@ -69,11 +71,11 @@ a.link:hover:after {
 }
 
 .denav {
-    
+
     display: flex;
     flex-direction: column;
 
-   
+
 }
 
 
@@ -85,7 +87,10 @@ a.link:hover:after {
 h1,
 h4 {
     color: var(--wit);
+    margin-left: 2%;
+    margin-right: 2%;
 }
+
 .nav-links li svg {
     margin-left: 5vh;
     margin-right: 1.5vh;
@@ -93,26 +98,28 @@ h4 {
 
 
 @media screen and (min-width: 0px) {
-   
+
 
     .Logo {
         padding-top: 2vh;
         padding-left: 4vh;
         align-self: center;
-        
+
 
     }
+
     .Logo:hover {
         transform: scale(1.1);
     }
+
     header {
         flex-direction: column;
     }
 
-    
+
 
     .nav-links {
-        align-self:center ;
+        align-self: center;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -132,31 +139,38 @@ h4 {
     .naam {
         text-align: center;
         margin-bottom: 50%;
-       
-        
-    
+
+
+
     }
 
     .naam h1 {
         margin-bottom: 5vh;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 
 }
 
 @media screen and (min-width: 420px) {
-    .nav-links{
+    .nav-links {
         flex-direction: row;
         font-size: 30px;
     }
-    h1{
+
+    h1 {
         font-size: 65px !important;
+        
+
     }
-    h4{
+
+    h4 {
         font-size: 30px !important;
         margin-left: 10%;
         margin-right: 10%;
     }
+
     .denav {
         position: absolute;
         top: 0;
@@ -170,21 +184,23 @@ h4 {
         display: flex;
         flex-direction: column;
 
-       
+
     }
-    header{
+
+    header {
         justify-content: center;
     }
+
     .naam {
         margin-bottom: 0%;
-       
-        
-    
+
+
+
     }
 }
 
 @media screen and (min-width: 600px) {
-    
+
 
     .Logo {
         padding-top: 2vh;
@@ -192,30 +208,26 @@ h4 {
         align-self: center;
     }
 
-   
+
 
 
 }
 
 @media screen and (min-width: 768px) {
     .Logo a img {
-            height: 8vh !important;
-            width: auto !important;
-        }
-   
+        height: 8vh !important;
+        width: auto !important;
+    }
+
 }
 
-@media screen and (min-width: 900px) {
-    
-}
+@media screen and (min-width: 900px) {}
 
 @media screen and (min-width: 1024px) {
-   a.link {
+    a.link {
         margin-left: 1vh;
         margin-right: 1vh;
-   }
+    }
 }
 
-@media screen and (min-width: 1200px) {
- 
-}
+@media screen and (min-width: 1200px) {}

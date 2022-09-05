@@ -20,3 +20,23 @@
 .top{
     transform: rotate(180deg);
 }
+
+
+
+
+.custom-shape-divider-top-1662328440 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1662328440 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+}
+
+.custom-shape-divider-top-1662328440 .shape-fill {
+    fill: #242424;
+}
