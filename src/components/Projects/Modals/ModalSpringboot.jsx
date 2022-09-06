@@ -90,7 +90,7 @@ const ModalSpringboot = (props) => {
     <>
       <div className="centered-title-text">
         <h4>Overview of all the functionalities</h4>
-        <p>lorem ipsum site that covers all the basics. This includes creating,updating,deleting and reading objects. This is also called CRUD. The website also includes a rest api,translations,form validation. The focus of this project was on the backend. The frontend was kept simple and clear. </p>
+        <p>All the basics were implemented. This includes creating,updating,deleting and reading objects, Also known as CRUD. A rest api, Internationalization, Validation and security. The focus of this project was on the backend. The frontend was kept simple. </p>
       </div>
       <div className="geenidee">
       <div className='left' data-aos="fade-up" data-aos-offset= "0">

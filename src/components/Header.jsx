@@ -20,7 +20,16 @@ import 'aos/dist/aos.css';
 // import {Triangle} from './Divider';
 const Header = () => {
   const [selectedTab, setSelectedTab] = React.useState("");
+  //is clicked state
+  const [isClicked, setIsClicked] = React.useState(false);
 
+  //handle click method that sets isClicked to true
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+    console.log("geklikt op de knop");
+  };
+
+      
 
   useEffect(() => {
     AOS.init({
@@ -102,6 +111,10 @@ const Header = () => {
           <h4> Applied informatics student at&nbsp;<strong>UCLL</strong></h4>
 
         </div>
+
+        <a href='#projects' className={isClicked ? "display-none" : ""} onClick={handleClick} >
+          <div class="drop-down scrollDown pc-visible"></div>
+        </a>
 
       </header>
 

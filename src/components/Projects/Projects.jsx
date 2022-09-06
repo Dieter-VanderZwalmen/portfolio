@@ -35,13 +35,13 @@ const Projects = () => {
                 
 
              
-                <CardFlip img="simple-icons:springboot" title="Springboot Website" subtitle="Springboot website" text="A website with basic CRUD operations, a database, relations between entities, security and i18n." githublink="https://github.com/Dieter-VanderZwalmen/Springboot-website" />
-                <CardFlip img="akar-icons:react-fill" title="React Website" subtitle="React website" text="This website is made with React. The code, all the ideas, nonoptimal solutions and a self reflection are available in the demo. ofzoiets kweet ni goed hoe ik het moet verwoorden" githublink="https://github.com/Dieter-VanderZwalmen/portfolio" />
-                <CardFlip img="teenyicons:c-sharp-solid" title="Minesweeper" subtitle="Minesweeper in C# " text="Minesweeper, The classic logic puzzle video game created in c# with the aid of a guide." githublink="https://github.com/Dieter-VanderZwalmen/Minesweeper" />
-                <CardFlip title="Huffmann Encoding" subtitle="Huffman Encoding in C++ " img="bxl:c-plus-plus" githublink="https://github.com/Dieter-VanderZwalmen/Huffman" text="The huffman encoding was made with the help of a guide. This application can encode en decode any file." />
-                <CardFlip title="Phoenix" subtitle="Website made with phoenix elixir" text="A website with basic CRUD operations, a database, relations between entities, security and i18n." img="la:phoenix-framework" githublink="https://github.com/ucll-internet-programming-major/project-jan-Dieter-VanderZwalmen" />
+                <CardFlip img="simple-icons:springboot" title="Springboot Website" subtitle="Springboot website" text="A framework for Java that makes developing web applications fast and easy." githublink="https://github.com/Dieter-VanderZwalmen/Springboot-website" />
+                <CardFlip img="akar-icons:react-fill" title="React Website" subtitle="React website" text="A JavaScript library aimed to easily create fast user interfaces for websites and applications alike" githublink="https://github.com/Dieter-VanderZwalmen/portfolio" />
+                <CardFlip img="teenyicons:c-sharp-solid" title="Minesweeper" subtitle="Minesweeper in C# " text="The classic logic puzzle video game created in c# and xaml to create a ui." githublink="https://github.com/Dieter-VanderZwalmen/Minesweeper" />
+                <CardFlip title="Huffmann Encoding" subtitle="Huffman Encoding in C++ " img="bxl:c-plus-plus" githublink="https://github.com/Dieter-VanderZwalmen/Huffman" text="A lossless data encoding algorithm. All characters are converted to a binary code, the more frequent a character is the shorter the binary code becomes." />
+                <CardFlip title="Phoenix" subtitle="Website made with phoenix elixir" text="A web development framework written in the functional programming language Elixir. Developed to provide highly performant and scalable web applications." img="la:phoenix-framework" githublink="https://github.com/ucll-internet-programming-major/project-jan-Dieter-VanderZwalmen" />
 
-                <CardFlip title="Scripting" subtitle="Scripting in Javascript and Python " text="Smalls scripts to automate exercises, provide information with the click of a button and ofcourse the exercises given in class! " img="bxl:python" githublink="https://github.com/Dieter-VanderZwalmen/Scripts" />
+                <CardFlip title="Scripting" subtitle="Scripting in Javascript and Python " text="Smalls scripts made to automate exercises made in Python" img="bxl:python" githublink="https://github.com/Dieter-VanderZwalmen/Scripts" />
 {/* 
                 <CardFlip title="Devops" text="Basic knowledge devops. Experience with Kubernetes and Gitlab." img="clarity:ci-cd-line" githublink="https://git.uclllabs.be/r0795533" /> */}
 

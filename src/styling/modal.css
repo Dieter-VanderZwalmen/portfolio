@@ -6,11 +6,14 @@
 
 .modal-body h4 {
     margin: 0;
-    text-align: left;
+    text-align: center;
+
 }
 
 .modal-content,
 .modal-content p {
+    text-align: center;
+
     background: var(--grijs) !important;
     color: var(--wit);
     font-size: 15px;
@@ -22,12 +25,12 @@
     font-size: 35px !important;
 
 }
-
-.centered-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.centered-title-text p{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
 
 .left,
 .right {
@@ -113,6 +116,20 @@
     margin-right: 15px;
     margin-top: 15px;
 
+}
+.modal-header {
+    display: inline !important;
+  text-align: center !important;
+ 
+
+}
+.modal-header .modal-title svg {
+    /*put the button in the top right corner */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 .buttons-left-right {
@@ -260,13 +277,15 @@
     }
 
     .centered-title-text {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        
         width: 50%;
         margin-left: 25%;
         margin-right: 25%;
         text-align: center;
+    }
+    .centered-title-text h4 {
+        text-align: center;
+        align-self: center;
     }
 
     .left-right {

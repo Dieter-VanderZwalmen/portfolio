@@ -4,6 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import {Icon} from '@iconify/react';
 import ModalSpringboot from './Modals/ModalSpringboot';
 import ModalMinesweeper from './Modals/ModalMinesweeper';
+import ModalReact from './Modals/ModalReact';
 // documentatie en verschillende manieren
 // https://react-bootstrap.github.io/components/modal/
 const ModalComponentv2 = (props) => {
@@ -90,6 +91,7 @@ const ModalComponentv2 = (props) => {
             {/* if project name equals "Springboot Website" show the modal-springboot component*/}
             {project.name === "Springboot Website" ? <ModalSpringboot /> : null}
             {project.name === "Minesweeper" ? <ModalMinesweeper /> : null}
+            {project.name === "React Website" ? <ModalReact /> : null}
               
             
           </Modal.Body>

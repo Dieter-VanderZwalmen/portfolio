@@ -83,6 +83,46 @@ h4 {
 }
 
 
+/*arrow */
+@keyframes bounce-up {
+	0% {
+		bottom: 30px;
+	}
+	50% {
+		bottom: 50px;
+	}
+	100% {
+		bottom: 30px;
+	}
+}
+.drop-down {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 10px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+    -webkit-animation-name: bounce-up;
+    animation-name: bounce-up;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    z-index: 100;
+    left: 50%;
+}
+
+
+.display-none{
+    display: none;
+}
+
 
 @media screen and (min-width: 0px) {
     .navbar{
