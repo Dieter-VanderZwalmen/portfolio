@@ -36,16 +36,23 @@ ul.skills svg{
 .card__face center svg, .skills li svg, .skills li img{
     height: 10vh;
     width: 10vh;
-    transition: all .2s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 
 ul svg:hover,.skills li img:hover{
 transform: scale(1.1);
 }
-.rotate:hover {
+
+
+.rotate{
     animation: rotation 5s infinite linear;
-    transform: scale(1.1);
+    animation-fill-mode: backwards;
+    animation-play-state: paused;      
+}
+.rotate:hover {
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
 

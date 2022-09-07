@@ -78,7 +78,7 @@ const ModalComponentv2 = (props) => {
           <Modal.Header closeButton>
 
             <Modal.Title>
-            <Icon classname="top-right-transparent" icon={props.img} />
+            <Icon classname="top-right-transparent" icon={props.img} className={props.img === "akar-icons:react-fill" ? "rotate" : "white-onhover"} />
             {project.name}
             </Modal.Title>
             
