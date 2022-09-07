@@ -8,6 +8,10 @@ h1{
 h2{
     font-size: 2.5rem !important;
 }
+/*h2 in cards needs to be a bit smaller maybe/probably I should've used h3*/
+.logo-title h2{
+    font-size: 2rem !important;
+}
 h4{
     font-size: 1.5rem;
 }

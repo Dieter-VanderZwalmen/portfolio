@@ -43,7 +43,7 @@ const Contact = () => {
            </div>
                 
         </div>
-        <Divider  color="grijs"></Divider>
+        {/* <Divider  color="grijs"></Divider> */}
         
         </div>
     )
