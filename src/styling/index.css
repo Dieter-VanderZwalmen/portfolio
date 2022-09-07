@@ -28,7 +28,8 @@
 /*modal*/
 @import url(modal.css);
 
-
+/*font-size*/
+@import url(font-size.css);
 
 /* global */
 *{

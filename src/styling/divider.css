@@ -1,42 +1,43 @@
-.custom-shape-divider-bottom-1662203521 {
-  
+.custom-shape-divider-top-1662540064 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    
+
+    /* display: none; */
 }
 
-.custom-shape-divider-bottom-1662203521 svg {
-    position: relative;
-    display: block;
-    width: calc(120% + 1.3px);
-    height: 56px;
-}
-
-.custom-shape-divider-bottom-1662203521 .shape-fill {
-    fill: #242424;
-}
-
-.top{
-    transform: rotate(180deg);
-}
-
-
-
-
-.custom-shape-divider-top-1662328440 {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1662328440 svg {
+.custom-shape-divider-top-1662540064 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 40px;
+    height: 50px;
+
+    /*flip it z axis */
+    transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1662328440 .shape-fill {
-    fill: #242424;
+.custom-shape-divider-top-1662540064 .shape-fill {
+    
+    /* fill: var(--grijs); */
+    /* fill: red; */
+}
+
+.flip {
+    transform: rotate(180deg);
+    transform: rotateY(180deg);
+}
+.grijs{
+    fill: var(--grijs) !important;
+}
+.wit{
+    fill: var(--wit) !important;
+}
+.top{
+    top: 0 !important;
+}
+.relative-position{
+    position: relative;
 }

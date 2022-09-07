@@ -11,3 +11,10 @@
         background-image: linear-gradient(to bottom right, var(--primaryGradient), var(--secondaryGradient)) !important;
         border-radius: 15px;
 }
+
+/* firefox werkt niet met de css hierboven dus vandaar een lelijkere versie */
+:root{
+    scrollbar-color: var(--wit) var(--grijs) !important;
+  scrollbar-width: thin !important;
+ 
+  }

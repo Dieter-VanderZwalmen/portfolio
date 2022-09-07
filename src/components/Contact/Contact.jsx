@@ -8,11 +8,12 @@ import { Icon } from '@iconify/react';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
+
 const Contact = () => {
     //state for info with default value = "default"
     
     return (
-            <>
+            <div className='position-relative'>
             
             <div className='projects' id="contact"  >
 
@@ -42,7 +43,9 @@ const Contact = () => {
            </div>
                 
         </div>
-        </>
+        <Divider  color="grijs"></Divider>
+        
+        </div>
     )
 
 }

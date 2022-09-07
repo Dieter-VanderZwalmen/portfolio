@@ -21,8 +21,8 @@ const Skills = () => {
     var color = "";
     return (
             
-            <>
-            <DividerTop></DividerTop>
+            <div className='position-relative'>
+            
             <a class="anchor" id="skills"></a>
         <div className='projects blackbackground white-text' >
         {/* <div className='projects blackbackground white-text'> */}
@@ -78,8 +78,8 @@ const Skills = () => {
            
                 
             </div>
-            <Divider></Divider>
-        </>
+            <Divider  color="wit"></Divider>
+        </div>
            
     )
 }

@@ -28,7 +28,7 @@ const ModalComponentv2 = (props) => {
       
     },
     {
-      name: "Phoenix",
+      name: "Phoenix Website",
       
     },
     {
@@ -86,7 +86,7 @@ const ModalComponentv2 = (props) => {
 
           </Modal.Header>
           <Modal.Body>
-            {/* This implemenation is not clean. I dont know why but project.infoMap[0].map to get all the maps does not work.*/}
+            {/* This implemenation is not clean. but it works.*/}
             
             {/* if project name equals "Springboot Website" show the modal-springboot component*/}
             {project.name === "Springboot Website" ? <ModalSpringboot /> : null}

@@ -8,7 +8,6 @@ import {Divider,DividerTop} from './Divider';
 const Footer = () => {
     return (
         <>
-        <DividerTop></DividerTop>
             <footer>
                 <img src={logo} style={{ width: "30px", height: "auto" }} />
 

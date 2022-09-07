@@ -135,7 +135,7 @@ h2{
         width: 31%;
     }
     .cards{
-        width: 85%;
+        width: 95%;
         margin-left: 7.5%;
         margin-right: 7.5%;
     }
@@ -143,9 +143,9 @@ h2{
 
 @media screen and (min-width: 900px) {
     .cards{
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     
   
@@ -272,7 +272,7 @@ h2 {
    
     margin-top: 3vh;
     margin-bottom: 3vh;
-    padding-bottom: 9%;
+    
     height: 10%;
     font-weight: 500;
     color: var(--wit) !important;

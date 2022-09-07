@@ -17,6 +17,9 @@ import logo from '../assets/logo.png';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
+import { Divider } from './Divider';
+
+
 // import {Triangle} from './Divider';
 const Header = () => {
   const [selectedTab, setSelectedTab] = React.useState("");
@@ -38,7 +41,7 @@ const Header = () => {
   }, []);
 
   return (
-    <>
+    <div className='relative-position'>
       <header>
         <div className='particles'>
           <ParticlesHandler />
@@ -112,13 +115,14 @@ const Header = () => {
 
         </div>
 
+      
         <a href='#projects' className={isClicked ? "display-none" : ""} onClick={handleClick} >
-          <div class="drop-down scrollDown pc-visible"></div>
+          <div class="drop-down scrollDown"></div>
         </a>
-
+        
       </header>
-
-    </>
+      <Divider color="wit"></Divider> 
+    </div>
   );
 
 }
