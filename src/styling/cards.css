@@ -132,16 +132,19 @@ h2{
 @media screen and (min-width: 750px) {
 
     .cardContainer {
-        width: 31%;
+        width: 45%;
     }
     .cards{
         width: 95%;
-        margin-left: 7.5%;
-        margin-right: 7.5%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 }
 
 @media screen and (min-width: 900px) {
+    .cardContainer {
+        width: 31%;
+    }
     .cards{
         width: 90%;
         margin-left: 5%;
@@ -331,7 +334,7 @@ h2 {
 
 }
 .description {
-    width: 60%;
+    width: 80%;
     position: absolute;
     top: 60%;
 }
