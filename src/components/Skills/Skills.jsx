@@ -43,22 +43,30 @@ const Skills = () => {
                 <li>  <img src={cplusplus} /> <p>C++</p></li>
                 <li>  <Icon icon="logos:python" style={{ color }} /> <p>Python</p></li>
                 <li><Icon icon="logos:javascript" style={{ color }} /> <p>Javascript</p></li>
+                <li> <Icon icon="vscode-icons:file-type-elixir" style={{ color }} /> <p>Elixir</p></li>
+                <li>  <Icon icon="logos:html-5" style={{ color }} /> <p>HTML</p></li>
+                <li> <Icon icon="logos:css-3" style={{ color }} /> <p>CSS</p></li>
+                <li> <Icon icon="logos:postgresql" style={{ color }} /> <p>Postgresql</p></li>
+                <li> <Icon icon="logos:mysql" style={{ color }} /> <p>Mysql</p></li>
                 <li>  <Icon icon="logos:nodejs-icon" style={{ color }} /> <p>Nodejs</p></li>
                 <li>  <Icon icon="logos:react" style={{ color }} className={"rotate"} /> <p>React</p></li>
                 <li> <Icon icon="logos:typescript" style={{ color }} /> <p>Typescript</p></li>
                 <li> <Icon icon="logos:phoenix" style={{ color }} /> <p>Phoenix</p></li>
-                <li> <Icon icon="vscode-icons:file-type-elixir" style={{ color }} /> <p>Elixir</p></li>
+                
                 <li> <Icon icon="simple-icons:springboot"  style={{ color: "rgb(104,189,69)" }}/> <p>Springboot</p></li>
                 
-                <li>  <Icon icon="logos:html-5" style={{ color }} /> <p>HTML</p></li>
-                <li> <Icon icon="logos:css-3" style={{ color }} /> <p>CSS</p></li>
+                
                 <li> <Icon icon="logos:git-icon" style={{ color }} /> <p>Git</p></li>
-                <li> <Icon icon="logos:postgresql" style={{ color }} /> <p>Postgresql</p></li>
-                <li> <Icon icon="clarity:ci-cd-line" style={{ color }} /> <p>CI-CD</p></li>
+               
+                
                 <li> <Icon icon="cib:cisco" style={{ color }} /> <p>Packet tracer</p></li>
 
                 <li> <Icon icon="flat-color-icons:linux" style={{ color }} className={"rotate"} /> <p>Linux</p></li>
-                
+                <li> <Icon icon="logos:docker-icon" style={{ color }} /> <p>Docker</p></li>
+                <li> <Icon icon="logos:kubernetes" style={{ color }} /> <p>Kubernetes</p></li>
+                <li> <Icon icon="clarity:ci-cd-line" style={{ color }} /> <p>CI-CD</p></li>
+                <li> <Icon icon="logos:flutter" style={{ color }} /> <p>Flutter</p></li>
+                <li> <Icon icon="logos:jupyter" style={{ color }} /> <p>Jupyter</p></li>
                 <li>  <img src={orange} /> <p>Orange data mining</p></li>
 
 

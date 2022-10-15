@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import ParticlesHandler from '../components/ParticleHandler';
 // import ParticlesBlackDots from '../components/Particles';
 import logo from '../assets/logo.png';
+// import logo from '../assets/LogoTorenZonderTekst.png';
 
 import AOS from "aos";
 import 'aos/dist/aos.css';
@@ -121,7 +122,7 @@ const Header = () => {
         </a>
         
       </header>
-      <Divider color="wit"></Divider> 
+      {/* <Divider color="wit"></Divider>  */}
     </div>
   );
 

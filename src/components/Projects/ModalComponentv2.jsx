@@ -5,6 +5,9 @@ import {Icon} from '@iconify/react';
 import ModalSpringboot from './Modals/ModalSpringboot';
 import ModalMinesweeper from './Modals/ModalMinesweeper';
 import ModalReact from './Modals/ModalReact';
+import ModalHuffman from './Modals/ModalHuffman';
+import ModalScripting from './Modals/ModalScripting';
+import ModalPhoenix from './Modals/ModalPhoenix';
 // documentatie en verschillende manieren
 // https://react-bootstrap.github.io/components/modal/
 const ModalComponentv2 = (props) => {
@@ -81,7 +84,9 @@ const ModalComponentv2 = (props) => {
             <Icon classname="top-right-transparent" icon={props.img} className={props.img === "akar-icons:react-fill" ? "rotate" : "white-onhover"} />
             {project.name}
             </Modal.Title>
-            
+            <h4 style={{color: "gray"}}>
+              This demo is not finished!
+            </h4>
 
 
           </Modal.Header>
@@ -92,7 +97,13 @@ const ModalComponentv2 = (props) => {
             {project.name === "Springboot Website" ? <ModalSpringboot /> : null}
             {project.name === "Minesweeper" ? <ModalMinesweeper /> : null}
             {project.name === "React Website" ? <ModalReact /> : null}
-              
+            {project.name === "Huffmann Encoding" ? <ModalHuffman /> : null}
+            {project.name === "Scripting" ? <ModalScripting /> : null}
+            {project.name === "Phoenix Website" ? <ModalPhoenix /> : null}
+            
+            
+            
+           
             
           </Modal.Body>
         </Modal>
@@ -100,7 +111,10 @@ const ModalComponentv2 = (props) => {
     );
   }
   else {
-    return (<> </>);
+    return (<Button variant="primary" onClick={() => setShow(true)}>
+    Not finished
+  </Button>
+);
   }
 }
 

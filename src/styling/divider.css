@@ -43,8 +43,8 @@
 }
 
 /*at 895 pixel width set .custom-shape-divider-top-1662540064 display to none */
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .custom-shape-divider-top-1662540064 {
         display: none;
     }
-} */
+}

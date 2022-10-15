@@ -142,9 +142,7 @@ h2{
 }
 
 @media screen and (min-width: 900px) {
-    .cardContainer {
-        width: 31%;
-    }
+   
     .cards{
         width: 90%;
         margin-left: 5%;
@@ -153,6 +151,16 @@ h2{
     
   
 }
+
+@media screen and (min-width: 1000px) {
+   
+    .cardContainer {
+        width: 31%;
+    }
+    
+  
+}
+
 @media screen and (min-width: 1250px) {
 
     
