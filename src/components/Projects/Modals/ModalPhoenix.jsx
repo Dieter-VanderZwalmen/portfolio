@@ -89,11 +89,11 @@ const ModalSpringboot = (props) => {
   return (
     <>
       <div className="centered-title-text">
-        <h4>Overview of all the functionalities</h4>
-        <p> Lorem IpsumAll the basics were implemented. This includes creating,updating,deleting and reading objects, Also known as CRUD. Relationships between objects.
+        <h4> <strong>F</strong>unctionalities</h4>
+        <p> All the basics were implemented, creating,updating,deleting and reading objects. Relationships between database tables.
              A rest api, Internationalization, Security with the help of the guardian plug, Validation. The focus of this project was on the backend. The frontend was kept simple. </p>
       </div>
-      <div className="geenidee">
+      {/* <div className="geenidee">
       <div className='left' data-aos="fade-up" data-aos-offset= "0">
         <div className='text'>
           <h4> <strong>CRUD</strong></h4>
@@ -177,8 +177,8 @@ const ModalSpringboot = (props) => {
         </div>
         <div className='buttons-left-right'>
           <ul className='horizontal-list'>
-          {/* APIOverview, APIError, APIAddCollector */}
-            <li>
+        
+             <li>
               <button   onClick={() => handleNext(0, 'API')} className={indexAPI === 0 ? "Demo-button activeButton" : "Demo-button"}>Overview</button>
             </li>
             <li>
@@ -227,7 +227,7 @@ const ModalSpringboot = (props) => {
           <img src={Login} alt="Form to create a form" className='center' />
         </div>
       </div>
-      </div>
+      </div> */} 
     </>
   );
 

@@ -112,7 +112,7 @@ const ModalComponentv2 = (props) => {
   }
   else {
     return (<Button variant="primary" onClick={() => setShow(true)}>
-    Not finished
+    In progress
   </Button>
 );
   }

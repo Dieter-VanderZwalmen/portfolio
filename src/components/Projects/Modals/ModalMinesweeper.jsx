@@ -59,13 +59,14 @@ const ModalSpringboot = (props) => {
     <>
       <div className='centered-title-text'>
         <h4>Overview of my version</h4>
-        <p>lorem ipsum . Doesnt crash no bugs, settings to customize the game including flooding board size and mine probability. The game was made with the help of a guide 
-          if you dont know how to game works <a href='https://mathworld.wolfram.com/Minesweeper.html#:~:text=Minesweeper%20is%20single%2Dplayer%20logic,a%20mine%2C%20the%20game%20ends.'target="_blank" style={{}}><strong>this</strong></a> explains it.the focus was on the backend </p>
+        <p> No time was spent on the visuals. The application was made in c# with XAML and scales with screensize. There are no crashes and no known bugs. The settings screen allows you the personalize your experience. </p>
+        
+         <p> if you dont know how to game works <a href='https://mathworld.wolfram.com/Minesweeper.html#:~:text=Minesweeper%20is%20single%2Dplayer%20logic,a%20mine%2C%20the%20game%20ends.'target="_blank" style={{}}><strong>this</strong></a> explains it.</p>
       </div>
       <div className='left'>
         <div className='text'>
           <h4> <strong>S</strong>ettings screen</h4>
-          <p> Lorem ipsum Options to customize the game. Like boardsize, mineprobability and flooding. There are 3 preset options labeled easy normal and hard with their own boardsizes and mineprobabilities.</p>
+          <p> There are 3 preset options labeled easy normal and hard with their own boardsizes and mine probabilities.</p>
         </div>
         <div className='image-container '>
           <img src={SettingsScreen} alt="Settings screen" className='center' />
@@ -74,7 +75,7 @@ const ModalSpringboot = (props) => {
       <div className='right'>
         <div className='text'>
           <h4> <strong>P</strong>lay screen</h4>
-          <p> The play screen has the minesweeper board and a play again button. </p>
+         <p></p>
         </div>
         <div className='image-container '>
           <img src={PlayScreen} alt="Play screen" className='center' />
@@ -84,8 +85,7 @@ const ModalSpringboot = (props) => {
       <div className='left'>
         <div className='text'>
           <h4> <strong>F</strong>looding</h4>
-          <p> Lorem ipsum Flooding occurs when you reveal a block and there are no bombs in close proximity.If this happens the surrounding unopened blocks are revealed until all the blocks have mines surrounding.
-            The buttons represent the board if flooding was enabled or disabled after pressing the block. </p>
+          
         </div>
         <div className='buttons-left-right'>
             <button onClick={() => handleNext(0, 'flooding')} className={indexFlooding === 0 ? "Demo-button activeButton" : "Demo-button"}>Enabled</button>
@@ -99,7 +99,7 @@ const ModalSpringboot = (props) => {
       <div className='left'>
         <div className='text'>
           <h4> <strong>B</strong>oardsize</h4>
-          <p> Lorem ipsum These are examples of the different boardsizes. </p>
+          <p>  </p>
         </div>
         <div className='buttons-left-right'>
             <button onClick={() => handleNext(0, 'size')} className={indexSize === 0 ? "Demo-button activeButton" : "Demo-button"}>6</button>

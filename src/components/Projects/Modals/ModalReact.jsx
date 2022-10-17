@@ -45,15 +45,10 @@ const ModalReact = (props) => {
         </div>
         <div className='left'>
           <div className='text'>
-            <h4> <strong>Why</strong></h4>
-            <p> Why did I choose react.
-              1 The component based rendering.
-              2 The use of hooks.
-              4 The use of props.
-              5 The use of single page websites.
-              9 Endless possible imports like aos and icons.
-              10 Information available.
+            <h4> <strong>W</strong>hy</h4>
+            <p> The biggest reason I chose React is for the Single-Page application. My focus was an easy to navigate simpel website. The fact that React is so widely used makes it easy to find help, documentation and libraries. 
               
+      
             </p>
           </div>
           <div className='image-container '>
@@ -62,8 +57,8 @@ const ModalReact = (props) => {
         </div>
         <div className='right'>
           <div className='text'>
-            <h4> <strong>What</strong></h4>
-            <p> very quick way to get an overview, more x than a resume, test myself, standout </p>
+            <h4> <strong>W</strong>hat</h4>
+            <p> Get a very quick overview of all my projects, what technologies I have used and how to contact me. </p>
           </div>
           <div className='image-container '>
             {/* <img src={PlayScreen} alt="Play screen" className='center' /> */}
@@ -72,8 +67,8 @@ const ModalReact = (props) => {
         </div>
         <div className='left'>
           <div className='text'>
-            <h4> <strong>How</strong></h4>
-            <p> cycle => Drawing,Examples,trying,Feedback from peers,Improving </p>
+            <h4> <strong>H</strong>ow</h4>
+            <p> I worked in little cycles. Where I visualized the idea, realized it followed by a reflection and improved upon the idea if I was satisfied.  </p>
           </div>
           <div className='image-container '>
             {/* <img src={PlayScreen} alt="Play screen" className='center' /> */}
@@ -82,8 +77,8 @@ const ModalReact = (props) => {
         </div>
         <div className='left'>
           <div className='text'>
-            <h4> Self <strong>Reflection</strong></h4>
-            <p> What went right (aesthetics, cards, modal header, particles header) What went wrong (optimal solutions, loops for information) </p>
+            <h4>  <strong>S</strong>elf reflection</h4>
+            <p> Personally I am very proud of the aesthetics but I am having trouble creating a short demo for each project.</p>
           </div>
           <div className='image-container '>
             {/* <img src={PlayScreen} alt="Play screen" className='center' /> */}
