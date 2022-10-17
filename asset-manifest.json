@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.795b0f52.css",
-    "main.js": "/portfolio/static/js/main.6ac61b20.js",
+    "main.js": "/portfolio/static/js/main.e08b8f59.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/TranslationENG.PNG": "/portfolio/static/media/TranslationENG.87a6cd05452c1e1ec591.PNG",
     "static/media/TranslationDUTCH.PNG": "/portfolio/static/media/TranslationDUTCH.b2bdf4ec5057ff0176bb.PNG",
@@ -23,6 +23,8 @@
     "static/media/Play1.PNG": "/portfolio/static/media/Play1.bf4855ef7de1f0ffda33.PNG",
     "static/media/FilterYear.PNG": "/portfolio/static/media/FilterYear.5cbcf62d027428c2766f.PNG",
     "static/media/Flooding.png": "/portfolio/static/media/Flooding.fffc43358ef8f8789172.png",
+    "static/media/bitsNeeded.png": "/portfolio/static/media/bitsNeeded.00b1adf320034244edbd.png",
+    "static/media/netwerken.png": "/portfolio/static/media/netwerken.bb6ec712ac92838bdde8.png",
     "static/media/PlayScreen.png": "/portfolio/static/media/PlayScreen.7b32f38fcdb7c8694b44.png",
     "static/media/6boardSize.png": "/portfolio/static/media/6boardSize.f85a59f42a4700b62e08.png",
     "static/media/Validation1.png": "/portfolio/static/media/Validation1.d28c37ae2e1bbc28b797.png",
@@ -42,11 +44,11 @@
     "static/media/github.svg": "/portfolio/static/media/github.4cd3a2bc790226c346ae943ec1622139.svg",
     "index.html": "/portfolio/index.html",
     "main.795b0f52.css.map": "/portfolio/static/css/main.795b0f52.css.map",
-    "main.6ac61b20.js.map": "/portfolio/static/js/main.6ac61b20.js.map",
+    "main.e08b8f59.js.map": "/portfolio/static/js/main.e08b8f59.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.795b0f52.css",
-    "static/js/main.6ac61b20.js"
+    "static/js/main.e08b8f59.js"
   ]
 }
