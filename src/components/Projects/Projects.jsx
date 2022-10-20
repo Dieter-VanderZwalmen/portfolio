@@ -34,11 +34,14 @@ const Projects = () => {
             <div className='cards' data-aos="fade-up" data-aos-offset="000">
                 
 
-             
+            {/* https://icon-sets.iconify.design/?query=light%20bulb */}
+           
+
                 <CardFlip img="simple-icons:springboot" title="Springboot Website" subtitle="Springboot website" text="Springboot is a framework for Java that makes developing web applications fast and easy." githublink="https://github.com/Dieter-VanderZwalmen/Springboot-website" />
                 <CardFlip img="akar-icons:react-fill" title="React Website" subtitle="React website" text="React is a JavaScript library aimed to easily create fast user interfaces for websites and applications alike." githublink="https://github.com/Dieter-VanderZwalmen/portfolio" />
                 <CardFlip img="teenyicons:c-sharp-solid" title="Minesweeper" subtitle="Minesweeper in C# " text="The classic logic puzzle video game created in c# and xaml to create a ui." githublink="https://github.com/Dieter-VanderZwalmen/Minesweeper" />
                 <CardFlip title="Huffmann Encoding" subtitle="Huffman Encoding in C++ " img="bxl:c-plus-plus" githublink="https://github.com/Dieter-VanderZwalmen/Huffman" text="A lossless data encoding algorithm. All characters are converted to a binary code, the more frequent a character is the shorter the binary code becomes." />
+                <CardFlip title="Ray tracing" subtitle="Ray tracing in C++ " img="akar-icons:light-bulb" text="Selfmade implementation of ray tracing made in c++" />
                 <CardFlip title="Phoenix Website" subtitle="Website made with phoenix elixir" text="Phoenix is a web development framework written in the functional programming language Elixir. Developed to provide highly performant and scalable web applications." img="la:phoenix-framework" githublink="https://github.com/ucll-internet-programming-major/project-jan-Dieter-VanderZwalmen" />
                 <CardFlip img="bxl:flutter" title="Mobile application" subtitle="Mobile application" text="Mobile application made with flutter for Android and IOS that makes keeping an overview of all your tasks easy. " /> 
                 <CardFlip title="Scripting" subtitle="Scripting in Javascript and Python. " text="Smalls scripts made to automate exercises made in Python" img="bxl:python" githublink="https://github.com/Dieter-VanderZwalmen/Scripts" />
@@ -56,7 +59,7 @@ const Projects = () => {
 
 
         </div>
-        <Divider color="grijs"></Divider>
+        {/* <Divider color="grijs"></Divider> */}
 
         </div>
     )

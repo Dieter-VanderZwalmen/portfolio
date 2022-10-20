@@ -86,7 +86,7 @@ const Skills = () => {
            
                 
             </div>
-            <Divider  color="wit"></Divider>
+            {/* <Divider  color="wit"></Divider> */}
         </div>
            
     )

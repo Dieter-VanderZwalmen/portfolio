@@ -30,12 +30,12 @@ const CardFlip = (props) => {
     }
 
     // when the page is loaded flip the card after 2 seconds
-    useEffect(() => {
-        setTimeout(() => {
-        flipCard();
-        }, 2000);
-    }
-    , [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //     flipCard();
+    //     }, 2000);
+    // }
+    // , [])
 
     const handleMouseOver = () => {
        // console.log("mouse over" + isHovering);
@@ -76,7 +76,7 @@ const CardFlip = (props) => {
 
          {/* <a className='btn btn-primary' href={props.link}>Demo</a> */}
          {/* <PopupComponent></PopupComponent> */}
-         <ModalComponentv2 data-aos="fade-up"  img = {props.img} title = {props.title}></ModalComponentv2>
+         <ModalComponentv2 data-aos="fade-up"  img = {props.img} title = {props.title} githublink = {props.githublink}></ModalComponentv2>
         </div>
         
     );
