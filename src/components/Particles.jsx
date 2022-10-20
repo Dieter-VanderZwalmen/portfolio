@@ -45,10 +45,10 @@ const ParticlesBlackDots = (props) => {
                     fpsLimit: 25,
                     interactivity: {
                         events: {
-                            onClick: {
-                                enable: false,
-                                mode: "push",
-                            },
+                            // onClick: {
+                            //     enable: false,
+                            //     mode: "push",
+                            // },
                             onHover: {
                                 enable: true,
                                 mode: "repulse",
@@ -66,7 +66,7 @@ const ParticlesBlackDots = (props) => {
                                 quantity: 4,
                             },
                             repulse: {
-                                distance: 0,
+                                distance: 100,
                                 duration: 0,
                             },
                         },

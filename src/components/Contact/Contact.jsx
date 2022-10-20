@@ -21,7 +21,7 @@ const Contact = () => {
             
                 <h2> <strong>Contact</strong> Me</h2>
             <hr className='black'></hr>
-                <div className='skills'>
+                <div className='skills' style={{marginBottom: "1%"}}>
                 <ul className='skills'>
                         <a href='mailto:dieter.vanderzwalmen@student.ucll.be' data-aos="fade-in" data-aos-offset="0" > 
                         {/* <a href='mailto:dieter.vanderzwalmen@student.ucll.be'>  */}

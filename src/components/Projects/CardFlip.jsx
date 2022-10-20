@@ -47,15 +47,11 @@ const CardFlip = (props) => {
         setIsHovering(false);
     }
 
-    const goToLink = (path) =>{
-        window.location.href = path + "test";
-
-    }
-
+ 
 
 
     return ( 
-        <div className='cardContainer'>
+         <div className='cardContainer' >
         <div class="card" onClick={() => flipCard()} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             
             <div class={`card__inner`} >

@@ -9,8 +9,9 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <img src={logo} style={{ width: "30px", height: "auto" }} />
-
+                
+                <img src={logo} style={{ width: "4vh", height: "auto" }} />
+            
               
 
                 {/* footer 
