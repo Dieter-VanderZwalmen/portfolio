@@ -36,7 +36,7 @@ const ModalScripting = (props) => {
   
     return (
       <>
-        
+        <div className="geenidee">
         <div className='left'>
           <div className='text'>
             <h4> <strong>VLSM</strong> calculator</h4>
@@ -70,7 +70,7 @@ const ModalScripting = (props) => {
 
           
         </div>
-        
+        </div>
        
       </>
     );

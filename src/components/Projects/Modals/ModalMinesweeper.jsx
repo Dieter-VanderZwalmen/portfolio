@@ -63,6 +63,7 @@ const ModalSpringboot = (props) => {
         
          <p> if you dont know how to game works <a href='https://mathworld.wolfram.com/Minesweeper.html#:~:text=Minesweeper%20is%20single%2Dplayer%20logic,a%20mine%2C%20the%20game%20ends.'target="_blank" style={{}}><strong>this</strong></a> explains it.</p>
       </div>
+      <div className="geenidee">
       <div className='left'>
         <div className='text'>
           <h4> <strong>S</strong>ettings screen</h4>
@@ -122,7 +123,7 @@ const ModalSpringboot = (props) => {
           <img src={Win} alt="Play screen" className='center' />
         </div>
       </div>
-      <div className='Left'>
+      <div className='left'>
         <div className='text'>
           <h4> <strong>L</strong>osing the game</h4>
           <p> When you trip over a mine, all mines will be shown and a message will appear and the blocks become unclickable. </p>
@@ -130,6 +131,7 @@ const ModalSpringboot = (props) => {
         <div className='image-container '>
           <img src={Los} alt="Play screen" className='center' />
         </div>
+      </div>
       </div>
     </>
   );

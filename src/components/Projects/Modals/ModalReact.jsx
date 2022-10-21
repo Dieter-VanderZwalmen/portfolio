@@ -43,6 +43,7 @@ const ModalReact = (props) => {
           <h4>My portfolio website</h4>
           <p>This site was made with React, but <strong>why</strong> did I choose react? <strong>what</strong> is the reason for the site, <strong>how</strong> was it accomplished and lastely a <strong>self reflection</strong> </p>
         </div>
+        <div className="geenidee">
         <div className='left'>
           <div className='text'>
             <h4> <strong>W</strong>hy</h4>
@@ -84,6 +85,7 @@ const ModalReact = (props) => {
             {/* <img src={PlayScreen} alt="Play screen" className='center' /> */}
           </div>
           
+        </div>
         </div>
        
       </>

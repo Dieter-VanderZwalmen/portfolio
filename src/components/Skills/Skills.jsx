@@ -54,7 +54,7 @@ const Skills = () => {
                 <li> <Icon icon="logos:phoenix" style={{ color }} /> <p>Phoenix</p></li>
                 
                 <li> <Icon icon="simple-icons:springboot"  style={{ color: "rgb(104,189,69)" }}/> <p>Springboot</p></li>
-                
+                <li> <Icon icon="akar-icons:django-fill"  style={{ color }}/> <p>Django</p></li>
                 
                 <li> <Icon icon="logos:git-icon" style={{ color }} /> <p>Git</p></li>
                
