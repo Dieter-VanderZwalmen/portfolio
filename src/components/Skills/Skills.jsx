@@ -18,7 +18,11 @@ const Skills = () => {
         });
     }, []);
 
+
+    // list of html elements
+    
     var color = "";
+
     return (
             
             <div className='position-relative'>
@@ -30,17 +34,22 @@ const Skills = () => {
                 <h2>My <strong>Skills</strong></h2>
                 <hr className="white"></hr>
                 <h4 style={{ display: "flex", justifyContent: "center" }}>All languages and technologies I have used, learnt and implemented in projects.</h4>
-                <ul className="skills blackbackground white-text">
+                
+                {/* loop through the list of html elements and display them */}
+        
 
-                {/* for loop that writes every element in iconList */}
-                {/* {iconList.map((icon) => (*/}
+                
+               
+                
+                
+
+                 <ul className="skills blackbackground white-text" data-aos="fade-in" data-aos-offset="250" >
+
+               
 
                 <li > <Icon icon="logos:java" style={{ color }}  /> <p>Java</p></li>
-                {/* <li> <Icon icon="teenyicons:c-sharp-solid" style={{ color }} /> <p>C#</p></li>
-                <li>  <Icon icon="bxl:c-plus-plus" style={{ color }} /> <p>C++</p></li> */}
-                 <li> <img src={csharp} /> <p>C#</p></li>
-                
-                <li>  <img src={cplusplus} /> <p>C++</p></li>
+                <li> <img src={csharp} /> <p>C#</p></li>
+                <li> <img src={cplusplus} /> <p>C++</p></li>
                 <li>  <Icon icon="logos:python" style={{ color }} /> <p>Python</p></li>
                 <li><Icon icon="logos:javascript" style={{ color }} /> <p>Javascript</p></li>
                 <li> <Icon icon="vscode-icons:file-type-elixir" style={{ color }} /> <p>Elixir</p></li>
@@ -68,21 +77,7 @@ const Skills = () => {
                 <li> <Icon icon="logos:flutter" style={{ color }} /> <p>Flutter</p></li>
                 <li> <Icon icon="logos:jupyter" style={{ color }} /> <p>Jupyter</p></li>
                 <li>  <img src={orange} /> <p>Orange data mining</p></li>
-
-
-
-                {/* <li><Icon icon="simple-icons:xaml" style={{ color: "white" }} /> <p>Xaml</p></li> */}
-
-                
-               
-               
-                
-               
-               
-                
-                
-
-                </ul>
+                </ul> 
            
                 
             </div>

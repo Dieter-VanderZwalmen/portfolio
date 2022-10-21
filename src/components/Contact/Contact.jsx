@@ -23,14 +23,14 @@ const Contact = () => {
             <hr className='black'></hr>
                 <div className='skills' style={{marginBottom: "1%"}}>
                 <ul className='skills'>
-                        <a href='mailto:dieter.vanderzwalmen@student.ucll.be' data-aos="fade-in" data-aos-offset="0" > 
+                        <a href='mailto:dieter.vanderzwalmen@student.ucll.be' data-aos="fade-right" data-aos-offset="200" > 
                         {/* <a href='mailto:dieter.vanderzwalmen@student.ucll.be'>  */}
                          <li> 
                             <Icon icon="ci:mail" style={{ color: 'var(--grijs)' }} /> 
                             <p>Mail</p>
                         </li> 
                         </a>
-                        <a href="https://www.linkedin.com/in/dieter-vdz/" data-aos="fade-in" data-aos-offset="0" >
+                        <a href="https://www.linkedin.com/in/dieter-vdz/" data-aos="fade-left" data-aos-offset="200" >
                         {/* <a href="https://www.linkedin.com/in/dieter-vdz/" > */}
                              <li> 
                                 <Icon icon="akar-icons:linkedin-box-fill" style={{ color: 'var(--grijs)' }} /> 
