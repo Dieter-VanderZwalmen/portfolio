@@ -81,19 +81,25 @@ const ModalComponentv2 = (props) => {
           <Modal.Header closeButton>
 
             <Modal.Title>
-            <Icon classname="top-right-transparent" icon={props.img} className={props.img === "akar-icons:react-fill" ? "rotate" : "white-onhover"} />
+            <a href={props.githublink} target="_blank" rel="noreferrer" >
+            <Icon classname="top-right" icon="akar-icons:github-fill" style={{color: "white"}} />
+            
+            </a>
+            
+           
+
             {project.name}
             </Modal.Title>
             <h4 style={{color: "gray"}}>
               This demo is not finished!
             </h4>
             {/* a element with href to the github repo of the project in props.githublink */}
-            <a href={props.githublink} target="_blank" rel="noreferrer">
-          
-            <Icon classname="top-right-transparent" icon="akar-icons:github-fill" className={props.img === "akar-icons:react-fill" ? "rotate" : "white-onhover"} />
-            </a>
+            
           </Modal.Header>
           <Modal.Body>
+          
+          
+         
             {/* This implemenation is not clean. but it works.*/}
             
             {/* if project name equals "Springboot Website" show the modal-springboot component*/}

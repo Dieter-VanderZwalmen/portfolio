@@ -99,10 +99,10 @@ const ModalSpringboot = (props) => {
           
         </div>
         <div className='buttons-left-right'>
-            <button   onClick={() => handleNext(0, 'CRUD')} className={indexCRUD === 0 ? "Demo-button activeButton" : "Demo-button"}><strong>C</strong>reate</button>
-            <button   onClick={() => handleNext(1, 'CRUD')} className={indexCRUD === 1 ? "Demo-button activeButton" : "Demo-button"}><strong>R</strong>ead</button>
-            <button   onClick={() => handleNext(2, 'CRUD')} className={indexCRUD === 2 ? "Demo-button activeButton" : "Demo-button"}><strong>U</strong>pdate</button>
-            <button   onClick={() => handleNext(3, 'CRUD')} className={indexCRUD === 3 ? "Demo-button activeButton" : "Demo-button"}><strong>D</strong>elete</button>
+            <button   onClick={() => handleNext(0, 'CRUD')} className={indexCRUD === 0 ? "Demo-button activeButton" : "Demo-button"}><strong></strong>Create</button>
+            <button   onClick={() => handleNext(1, 'CRUD')} className={indexCRUD === 1 ? "Demo-button activeButton" : "Demo-button"}><strong></strong>Read</button>
+            <button   onClick={() => handleNext(2, 'CRUD')} className={indexCRUD === 2 ? "Demo-button activeButton" : "Demo-button"}><strong></strong>Update</button>
+            <button   onClick={() => handleNext(3, 'CRUD')} className={indexCRUD === 3 ? "Demo-button activeButton" : "Demo-button"}><strong></strong>Delete</button>
         </div>
         <div className='image-container slideshow '>
           
