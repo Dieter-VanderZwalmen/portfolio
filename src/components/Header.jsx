@@ -67,7 +67,7 @@ const Header = () => {
             </li>
 
             <li>
-              <a href="https://a7m2a8t7.rocketcdn.me/wp-content/uploads/2021/05/Ronnie-Coleman-Leg-Workout-e1621309722852.jpg"
+              <a href="portfolio/Dieter_Van_der_Zwalmen.pdf"
                 target="_blank">
                 <FontAwesomeIcon icon={faFile} className="fa-cog" />
                 <a className='link'>Resume</a></a>
@@ -97,7 +97,7 @@ const Header = () => {
             </li>
 
             <li>
-              <a href="https://a7m2a8t7.rocketcdn.me/wp-content/uploads/2021/05/Ronnie-Coleman-Leg-Workout-e1621309722852.jpg"
+              <a href="portfolio/Dieter_Van_der_Zwalmen.pdf"
                 target="_blank">
                 <FontAwesomeIcon icon={faFile} className="fa-cog" />
                 <a className='link'>Resume</a></a>
