@@ -90,7 +90,7 @@ const ModalSpringboot = (props) => {
     <>
       <div className="centered-title-text">
         <h4>Overview of all the functionalities</h4>
-        <p>All the basics were implemented. This includes creating,updating,deleting and reading objects, Also known as CRUD. A rest api, Internationalization, Validation and security. The focus of this project was on the backend. The frontend was kept simple. </p>
+        <p>All the basics were implemented. This includes creating, updating, deleting and reading objects, Also known as CRUD. A rest api, Internationalization, Validation and security. The focus of this project was on the backend. The frontend was kept simple. </p>
       </div>
       <div className="geenidee">
       <div className='left' data-aos="fade-up" data-aos-offset= "0">

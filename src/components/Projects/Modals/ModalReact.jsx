@@ -41,7 +41,7 @@ const ModalReact = (props) => {
       <>
         <div className='centered-title-text'>
           <h4>My portfolio website</h4>
-          <p>This site was made with React, but <strong>why</strong> did I choose react? <strong>what</strong> is the reason for the site, <strong>how</strong> was it accomplished and lastely a <strong>self reflection</strong> </p>
+          <p>This site was made with React, but <strong>why</strong> did I choose react? <strong>what</strong> is the reason for the site, <strong>how</strong> was it accomplished and lastely a <strong>self-reflection</strong> </p>
         </div>
         <div className="geenidee">
         <div className='left'>
@@ -69,7 +69,7 @@ const ModalReact = (props) => {
         <div className='left'>
           <div className='text'>
             <h4> <strong>H</strong>ow</h4>
-            <p> I worked in little cycles. Where I visualized the idea, realized it followed by a reflection and improved upon the idea if I was satisfied.  </p>
+            <p> I worked in little cycles. Where I visualized the idea, realized it, followed by a reflection and improved upon the idea if I was satisfied.  </p>
           </div>
           <div className='image-container '>
             {/* <img src={PlayScreen} alt="Play screen" className='center' /> */}

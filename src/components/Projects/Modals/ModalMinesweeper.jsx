@@ -61,7 +61,7 @@ const ModalSpringboot = (props) => {
         <h4>Overview of my version</h4>
         <p> No time was spent on the visuals. The application was made in c# with XAML and scales with screensize. There are no crashes and no known bugs. The settings screen allows you the personalize your experience. </p>
         
-         <p> if you dont know how to game works <a href='https://mathworld.wolfram.com/Minesweeper.html#:~:text=Minesweeper%20is%20single%2Dplayer%20logic,a%20mine%2C%20the%20game%20ends.'target="_blank" style={{}}><strong>this</strong></a> explains it.</p>
+         <p> If you dont know how to game works <a href='https://mathworld.wolfram.com/Minesweeper.html#:~:text=Minesweeper%20is%20single%2Dplayer%20logic,a%20mine%2C%20the%20game%20ends.'target="_blank" style={{}}><strong>this</strong></a> explains it.</p>
       </div>
       <div className="geenidee">
       <div className='left'>
