@@ -67,7 +67,7 @@ const Header = () => {
             </li>
 
             <li>
-              <a href="portfolio/Dieter_Van_der_Zwalmen.pdf"
+              <a href="https://dieter-vanderzwalmen.github.io/portfolio/Dieter_Van_der_Zwalmen.pdf"
                 target="_blank">
                 <FontAwesomeIcon icon={faFile} className="fa-cog" />
                 <a className='link'>Resume</a></a>
@@ -97,7 +97,7 @@ const Header = () => {
             </li>
 
             <li>
-              <a href="portfolio/Dieter_Van_der_Zwalmen.pdf"
+              <a href="https://dieter-vanderzwalmen.github.io/portfolio/Dieter_Van_der_Zwalmen.pdf"
                 target="_blank">
                 <FontAwesomeIcon icon={faFile} className="fa-cog" />
                 <a className='link'>Resume</a></a>
