@@ -81,10 +81,11 @@ const ModalComponentv2 = (props) => {
           <Modal.Header closeButton>
 
             <Modal.Title>
-            <a href={props.githublink} target="_blank" rel="noreferrer" >
-            <Icon classname="top-right" icon="akar-icons:github-fill" style={{color: "white"}} />
+            {/* <a href={props.githublink} target="_blank" rel="noreferrer" >
+            <Icon classname="top-right" icon="akar-icons:github-fill" style={{color: "grey"}} />
             
-            </a>
+            </a> */}
+            <Icon classname="top-right-transparent" icon={props.img} className={props.img === "akar-icons:react-fill" ? "rotate" : "white-onhover"} />
             
            
 
@@ -97,7 +98,9 @@ const ModalComponentv2 = (props) => {
             
           </Modal.Header>
           <Modal.Body>
-          
+          <a href={props.githublink}>
+            Source code
+          </a>
           
          
             {/* This implemenation is not clean. but it works.*/}
