@@ -8,7 +8,8 @@ import "bootstrap/js/src/collapse.js";
 
 // import { fontawesome } from '@fortawesome/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faCode, faGraduationCap, faTools, faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faCode, faGraduationCap, faTools, faFile, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {Icon} from '@iconify/react';
 import { useEffect } from 'react';
 import ParticlesHandler from '../components/ParticleHandler';
 // import ParticlesBlackDots from '../components/Particles';
@@ -33,7 +34,7 @@ const Header = () => {
     console.log("geklikt op de knop");
   };
 
-      
+
 
   useEffect(() => {
     AOS.init({
@@ -48,43 +49,44 @@ const Header = () => {
           <ParticlesHandler />
         </div>
         <nav class="hide-big  navbar navbar-expand-lg navbar-dark">
-        <div className='Logo'>
+          <div className='Logo'>
             <a href='/portfolio' ><img src={logo} style={{ width: "30px", height: "auto" }} /></a>
           </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-    <li><a href="#projects" >
-              <FontAwesomeIcon icon={faCode} className="fa-cog" />
-              <a className='link'>Projects</a></a>
-            </li>
-            <li>
-              <a href="#skills" >
-                <FontAwesomeIcon icon={faTools} className="fa-cog" />
-                <a className='link'>Skills</a></a>
-            </li>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li><a href="#projects" >
+                <FontAwesomeIcon icon={faCode} className="fa-cog" />
+                <a className='link'>Projects</a></a>
+              </li>
+              <li>
+                <a href="#skills" >
+                  <FontAwesomeIcon icon={faTools} className="fa-cog" />
+                  <a className='link'>Skills</a></a>
+              </li>
 
-            <li>
-              <a href="https://dieter-vanderzwalmen.github.io/portfolio/Dieter_Van_der_Zwalmen.pdf"
-                target="_blank">
-                <FontAwesomeIcon icon={faFile} className="fa-cog" />
-                <a className='link'>Resume</a></a>
-            </li>
-            <li>
-              <a href="#contact">
-                <FontAwesomeIcon icon={faEnvelope} className="fa-cog" />
-                <a className='link'>Contact</a> </a>
-            </li>
-    </ul>
-  </div>
-</nav>
+              <li>
+                <a href="https://dieter-vanderzwalmen.github.io/portfolio/Dieter_Van_der_Zwalmen.pdf"
+                  target="_blank">
+                  <FontAwesomeIcon icon={faFile} className="fa-cog" />
+                  <a className='link'>Resume</a></a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <FontAwesomeIcon icon={faEnvelope} className="fa-cog" />
+                  <a className='link'>Contact</a> </a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
         <nav className="denav">
           <div className='Logo'>
             <a href='/portfolio' ><img src={logo} style={{ width: "30px", height: "auto" }} /></a>
           </div>
-          
+
           <ul className="nav-links ">
             <li><a href="#projects" >
               <FontAwesomeIcon icon={faCode} className="fa-cog" />
@@ -107,6 +109,7 @@ const Header = () => {
                 <FontAwesomeIcon icon={faEnvelope} className="fa-cog" />
                 <a className='link'>Contact</a> </a>
             </li>
+            
           </ul>
         </nav>
 
@@ -116,11 +119,11 @@ const Header = () => {
 
         </div>
 
-      
+
         <a href='#projects' className={isClicked ? "display-none" : ""} onClick={handleClick} >
           <div class="drop-down scrollDown"></div>
         </a>
-        
+
       </header>
       {/* <Divider color="wit"></Divider>  */}
     </div>

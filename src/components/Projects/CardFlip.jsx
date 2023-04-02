@@ -6,7 +6,7 @@ import {React, useState,useEffect} from 'react';
 import {Icon} from '@iconify/react';
 import Popup from 'reactjs-popup';
 import PopupComponent from './PopupComponent';
-
+import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
 import ModalComponentv2 from "./ModalComponentv2";
 
@@ -47,6 +47,12 @@ const CardFlip = (props) => {
         setIsHovering(false);
     }
 
+    const goToGithub = (link) => {
+        //console.log("github link: " + link);
+        //open a new window with the github link
+        window.open(link, "_blank");
+    }
+
  
 
 
@@ -76,7 +82,8 @@ const CardFlip = (props) => {
 
          {/* <a className='btn btn-primary' href={props.link}>Demo</a> */}
          {/* <PopupComponent></PopupComponent> */}
-         <ModalComponentv2 data-aos="fade-up"  img = {props.img} title = {props.title} githublink = {props.githublink}></ModalComponentv2>
+         {/* <ModalComponentv2 data-aos="fade-up"  img = {props.img} title = {props.title} githublink = {props.githublink}></ModalComponentv2> */}
+        <Button variant="primary" onClick={() => goToGithub(props.githublink)}>Source code</Button>
         </div>
         
     );
