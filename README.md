@@ -9,3 +9,7 @@ to download all the depencies do:
 
 to run the project locally do:
 `npm start`
+
+<hr>
+Another website I have made for a friend that is still in production:
+https://dieter-vanderzwalmen.github.io/svedorv2/ 
